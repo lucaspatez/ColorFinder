@@ -29,7 +29,10 @@ body {
 .header {
   grid-area: header;
   background-size: cover;
-  background: url("../assets/images/LightHeader.svg") center center fixed no-repeat;
+  background-image: url("../assets/images/LightHeader.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -54,8 +57,7 @@ body {
       color: teal; }
 
 .dark-theme .header {
-  background-size: cover;
-  background: url("../assets/images/DarkHeader.svg") center center fixed no-repeat; }
+  background-image: url("../assets/images/DarkHeader.svg"); }
   .dark-theme .header .header-container {
     background-color: rgba(0, 0, 0, 0.8); }
 
