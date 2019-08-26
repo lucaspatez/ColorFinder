@@ -17,5 +17,8 @@
     "theme_color": "#FFFFFF",
     "background-color": "#FFFFFF",
     "display": "standalone",
-    "scope": "/"
+    "scope": "/",
+    "lang" : "Portuguese",
+    "orientation" : "any",
+    "description" : "Um Aplicativo Web desenvolvido para ajudar pessoas com cores de forma dinâmica"
 }
