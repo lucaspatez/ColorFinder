@@ -32,7 +32,6 @@ body {
   background-image: url("../assets/images/LightHeader.svg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center; }
