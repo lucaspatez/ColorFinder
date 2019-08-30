@@ -1,9 +1,10 @@
-# ColorFinder [1.0.1c]
+# ColorFinder [1.0.2]
 ## [Encontre sua Cor](https://colorfinder.netlify.com)
 
 ### Changelog
 #### *30/08/2019*
-- Compartilhamento com ou sem Web Share API.
+- Compartilhamento com ou sem Web Share API;
+- Atalhos do Teclado adicionados.
 #### *28/08/19*
 - Limpeza no código SCSS/CSS.
 
