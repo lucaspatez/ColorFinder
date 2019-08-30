@@ -300,6 +300,10 @@ body {
       color: black;
       text-decoration: none;
       cursor: pointer; }
+      .color-nav ul li a#fb-share, .color-nav ul li a#tw-share {
+        display: none; }
+        .color-nav ul li a#fb-share.show-social, .color-nav ul li a#tw-share.show-social {
+          display: flex; }
       .color-nav ul li a .color-circle {
         display: block;
         border: 5px double #e6e6e6;
