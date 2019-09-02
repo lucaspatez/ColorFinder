@@ -12,7 +12,9 @@
   .dark-theme .section .section-title {
     color: white; }
   .dark-theme .color-card {
-    background-color: black; }
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); }
     .dark-theme .color-card .color-names span:first-child,
     .dark-theme .color-card .color-names span:last-child {
       color: white; }
@@ -25,7 +27,7 @@
   .dark-theme .color-nav {
     background-color: black; }
     .dark-theme .color-nav .divider {
-      border: 1px solid rgba(255, 255, 255, 0.5); }
+      border: 1px solid rgba(255, 255, 255, 0.3); }
     .dark-theme .color-nav ul .title {
       color: white; }
     .dark-theme .color-nav ul li a {
@@ -143,10 +145,12 @@ body {
 .color-card {
   display: block;
   position: relative;
-  width: 250px;
+  width: 230px;
   height: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 5px;
   margin: 10px;
   padding: 5px; }
@@ -223,9 +227,9 @@ body {
   visibility: hidden;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.5);
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease;
+  transition: all 1.5s ease;
   overflow: hidden;
   cursor: pointer;
   backdrop-filter: blur(5px);
@@ -237,44 +241,41 @@ body {
 .color-nav-btn {
   position: fixed;
   z-index: 11;
-  width: 70px;
-  height: 70px;
-  left: -25px;
-  bottom: -25px;
+  width: 50px;
+  height: 50px;
+  left: 5px;
+  bottom: 5px;
   border: none;
   background-color: white;
-  border-radius: 5000px;
-  font-size: 30px;
-  padding-bottom: 25px;
-  padding-left: 15px;
-  font-style: normal;
-  font-weight: bold;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  color: black;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer; }
 
 .color-nav {
   display: none;
   position: fixed;
-  bottom: 50px;
-  left: 40px;
-  width: 210px;
-  max-height: 80vh;
+  bottom: 0;
+  left: 0;
   overflow-y: auto;
+  width: 280px;
+  height: 100%;
   background-color: white;
   border: none;
-  border-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   z-index: 11;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  transition: all 1s ease; }
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease;
+  transition: all 1.5s ease; }
   .color-nav.opened {
     display: block; }
   .color-nav .divider {
     display: block;
     width: 90%;
-    margin: 5px auto;
-    border: 1px solid rgba(0, 0, 0, 0.5); }
+    margin: 10px auto;
+    border: 1px solid rgba(0, 0, 0, 0.3); }
   .color-nav ul {
     list-style-type: none;
     text-align: center; }
@@ -282,7 +283,6 @@ body {
       font-weight: bold;
       font-size: 16px;
       line-height: 24px;
-      text-align: center;
       color: black; }
     .color-nav ul li a {
       display: flex;
