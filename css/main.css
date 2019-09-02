@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap");
 .dark-theme {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  transition: all 1s ease; }
+  -webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out; }
   .dark-theme body {
     background-color: #1a1a1a; }
   .dark-theme .header {
@@ -227,9 +227,9 @@ body {
   visibility: hidden;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.5);
-  -webkit-transition: all 1.5s ease;
-  -moz-transition: all 1.5s ease;
-  transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
   overflow: hidden;
   cursor: pointer;
   backdrop-filter: blur(5px);
@@ -253,10 +253,10 @@ body {
   cursor: pointer; }
 
 .color-nav {
-  display: none;
+  display: block;
   position: fixed;
   bottom: 0;
-  left: 0;
+  left: -300px;
   overflow-y: auto;
   width: 280px;
   height: 100%;
@@ -266,11 +266,11 @@ body {
   border-bottom-right-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   z-index: 11;
-  -webkit-transition: all 1.5s ease;
-  -moz-transition: all 1.5s ease;
-  transition: all 1.5s ease; }
+  -webkit-transition: left 1.5s ease-in-out;
+  -moz-transition: left 1.5s ease-in-out;
+  transition: left 1.5s ease-in-out; }
   .color-nav.opened {
-    display: block; }
+    left: 0; }
   .color-nav .divider {
     display: block;
     width: 90%;
