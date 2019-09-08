@@ -50,7 +50,7 @@ function closeColorNotificationOnDelay() {
 var clipboard = new ClipboardJS('.color-btn');
 
 clipboard.on('success', function (e) {
-  openColorNotification();
+  openColorNotification()
   closeColorNotificationOnDelay();
   console.log('Action:', e.action);
   console.log('Text:', e.text);
@@ -85,20 +85,21 @@ function toggleNav() {
 
 colorNavBtn.addEventListener('click', toggleNav, false);
 colorNav.addEventListener('click', toggleNav, false);
-overlay.addEventListener('click', toggleNav, false);
+overlay.addEventListener('click', toggleNav, false); 
 
 // Share API
 const shareBtn = document.querySelector('#share-btn');
 const shareFb = document.querySelector('#fb-share');
 const shareTw = document.querySelector('#tw-share');
 shareBtn.addEventListener('click', event => {
-  if (navigator.share) {
+  if(navigator.share) {
     navigator.share({
       title: 'ColorFinder',
       url: 'https://colorfinder.netlify.com'
     }).then(() => {
       console.log('Obrigado por Compartilhar!');
-    }).catch(console.error);
+    })
+    .catch(console.error);
   }
 });
 
@@ -117,66 +118,66 @@ const greenColors = document.querySelector('#green-colors');
 // JumpTo Functions
 function jumtpToGrayColors() {
   grayColors.scrollIntoView({
-    behavior: "smooth"
+    behavior: "smooth",
   });
 };
 
 function jumpToBlueColors() {
   blueColors.scrollIntoView({
-    behavior: "smooth"
+    behavior: "smooth",
   });
 };
 
 function jumpToRedColors() {
   redColors.scrollIntoView({
-    behavior: "smooth"
+    behavior: "smooth",
   });
 };
 
 function jumpToPinkColors() {
   pinkColors.scrollIntoView({
-    behavior: "smooth"
+    behavior: "smooth",
   });
 };
 
 function jumpToOrangeColors() {
   orangeColors.scrollIntoView({
-    behavior: "smooth"
+    behavior: "smooth",
   });
 };
 
 function jumpToBrownColors() {
   brownColors.scrollIntoView({
-    behavior: "smooth"
+    behavior: "smooth",
   });
 };
 
 function jumpToYellowColors() {
   yellowColors.scrollIntoView({
-    behavior: "smooth"
+    behavior: "smooth",
   });
 };
 
 function jumpToWhiteColors() {
   whiteColors.scrollIntoView({
-    behavior: "smooth"
+    behavior: "smooth",
   });
 };
 
 function jumpToPurpleColors() {
   purpleColors.scrollIntoView({
-    behavior: "smooth"
+    behavior: "smooth",
   });
 };
 
 function jumpToGreenColors() {
   greenColors.scrollIntoView({
-    behavior: "smooth"
+    behavior: "smooth",
   });
 };
 
 // Keyboard Shortcuts
-document.onkeyup = function (e) {
+document.onkeyup = function(e) {
   if (e.shiftKey && e.which == 49) {
     jumtpToGrayColors();
   } else if (e.shiftKey && e.which == 50) {

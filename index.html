@@ -88,6 +88,8 @@
 </head>
 
 <body>
+    <!-- Overlay -->
+    <div id="overlay"></div>
 
     <!-- Color Notification -->
     <div class="color-notification" id="color-notification">
@@ -96,17 +98,13 @@
     </div>
 
     <!-- Color Navigation -->
-    <button class="color-nav-btn" id="color-nav-btn"><i class="fas fa-bars"></i></button>
+    <button class="color-nav-btn" id="color-nav-btn">+</button>
 
     <nav class="color-nav" id="color-nav">
         <ul>
             <span class="title">Interações</span>
-            <li><a id="share-btn"><i
-                       class="icon fas fa-share-alt"></i> Compartilhar</a></li>
-            <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcolorfinder.netlify.com%2F" id="fb-share" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
-            <li><a href="https://twitter.com/intent/tweet/?text=Encontre%20sua%20cor%20em%20ColorFinder&url=https%3A%2F%2Fcolorfinder.netlify.com%2F&hashtags=web,colors" id="tw-share" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-            <li><a href="https://github.com/lucaspatez/ColorFinder"><i class="icon fab fa-github-alt"></i> Repositório
-                    Github</a></li>
+            <li><a id="share-btn"><i class="icon fas fa-share-alt"></i> Compartilhar</a></li>
+            <li><a href="https://github.com/lucaspatez/ColorFinder"><i class="icon fab fa-github-alt"></i> Repositório Github</a></li>
         </ul>
         <hr class="divider">
         <ul>
@@ -141,8 +139,6 @@
                 </a></li>
         </ul>
     </nav>
-
-    <div class="color-nav-overlay" id="color-nav-overlay"></div>
 
     <header class="header">
         <div class="header-container">

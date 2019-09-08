@@ -1,0 +1,90 @@
+// Dark Theme Settings
+html.dark-theme {
+    // Body
+    body {
+        background-color: $dark;
+    }
+
+    // Header
+    .header {
+        background-image: url('../assets/images/DarkHeader.svg');
+
+        .header-container {
+            background-color: rgba($black, 0.8);
+        }
+    }
+
+    // Section
+    .section {
+        .section-title {
+            color: $white;
+        }
+    }
+
+    // ColorCard
+    .color-card {
+        background-color: rgba($black, 0.8);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
+        .color-names {
+            span:first-child,
+            span:last-child {
+                color: $white;
+            }
+        }
+    }
+
+    // ColorNotification
+    .color-notification {
+        background-color: $black;
+        color: $white;
+    }
+
+    // Color Nav Button
+    .color-nav-btn {
+        background-color: $black;
+        color: $white;
+    }
+
+    // Color Nav
+    .color-nav {
+        background-color: $black;
+
+        .divider {
+            border: 1px solid rgba($white, 0.3);
+        }
+
+        ul {
+            .title {
+                color: $white;
+            }
+
+            li a {
+                color: $white;
+                background-color: $dark;
+
+                .color-circle {
+                    border: 3px double $dark;
+                }
+            }
+        }
+    }
+
+    // DT Switcher
+    .switch--shadow+label {
+        background-color: $black;
+    }
+
+    .switch--shadow+label:before {
+        background-color: $black;
+    }
+
+    .switch--shadow+label:after {
+        background-color: $primary;
+    }
+
+    .switch--shadow:checked+label:before {
+        background-color: $black;
+    }
+}
