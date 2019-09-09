@@ -52,17 +52,21 @@ html.dark-theme {
         background-color: $black;
 
         .divider {
-            border: 1px solid rgba($white, 0.3);
+            border: 1px solid rgba($white, 0.1);
         }
 
         ul {
             .title {
-                color: $white;
+                color: $light;
             }
 
             li a {
                 color: $white;
-                background-color: $dark;
+                background-color: $black;
+
+                &:hover {
+                    background-color: $dark;
+                }
 
                 .color-circle {
                     border: 3px double $dark;
@@ -73,11 +77,11 @@ html.dark-theme {
 
     // DT Switcher
     .switch--shadow+label {
-        background-color: $black;
+        background-color: rgba($white, 0.2);
     }
 
     .switch--shadow+label:before {
-        background-color: $black;
+        background-color: $dark;
     }
 
     .switch--shadow+label:after {
@@ -85,6 +89,6 @@ html.dark-theme {
     }
 
     .switch--shadow:checked+label:before {
-        background-color: $black;
+        background-color: $dark;
     }
 }
