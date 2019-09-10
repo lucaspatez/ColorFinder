@@ -76,10 +76,14 @@ function toggleNav() {
     colorNav.classList.add('opened');
     colorNavBtn.innerHTML = "-";
     overlay.classList.add('show-o');
+    document.body.classList.add('no-scroll');
+    document.documentElement.classList.add('no-scroll');
   } else {
     colorNav.classList.remove('opened');
     colorNavBtn.innerHTML = "+";
     overlay.classList.remove('show-o');
+    document.body.classList.remove('no-scroll');
+    document.documentElement.classList.remove('no-scroll');
   }
 }
 
@@ -89,8 +93,6 @@ overlay.addEventListener('click', toggleNav, false);
 
 // Share API
 const shareBtn = document.querySelector('#share-btn');
-const shareFb = document.querySelector('#fb-share');
-const shareTw = document.querySelector('#tw-share');
 shareBtn.addEventListener('click', event => {
   if(navigator.share) {
     navigator.share({
@@ -100,6 +102,8 @@ shareBtn.addEventListener('click', event => {
       console.log('Obrigado por Compartilhar!');
     })
     .catch(console.error);
+  } else {
+    shareBtn.classList.add('no-share');
   }
 });
 

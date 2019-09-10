@@ -85,6 +85,9 @@ html,
 body {
   width: 100%;
   height: 100%; }
+  html.no-scroll,
+  body.no-scroll {
+    overflow: hidden; }
 
 body {
   display: grid;
@@ -300,10 +303,8 @@ body {
       cursor: pointer; }
       .color-nav ul li a:hover {
         background-color: #e6e6e6; }
-      .color-nav ul li a#fb-share, .color-nav ul li a#tw-share {
+      .color-nav ul li a#share-btn.no-share {
         display: none; }
-        .color-nav ul li a#fb-share.show-social, .color-nav ul li a#tw-share.show-social {
-          display: flex; }
       .color-nav ul li a .icon {
         margin: 0 10px 0 0; }
       .color-nav ul li a .color-circle {
@@ -321,6 +322,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
+  bottom: 0;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
