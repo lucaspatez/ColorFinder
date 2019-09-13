@@ -419,10 +419,15 @@ body {
     box-shadow: 0 -4px 8px rgba($black, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    padding: $padding;
+    text-align: center;
     &>p {
         color: $dark;
         font-size: 16px;
         font-weight: 600;
         font-style: normal;
+        a {
+            color: $black;
+        }
     }
 }

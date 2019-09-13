@@ -67,6 +67,8 @@ html.dark-theme .footer {
   background-color: rgba(0, 0, 0, 0.8); }
   html.dark-theme .footer > p {
     color: #e6e6e6; }
+    html.dark-theme .footer > p a {
+      color: white; }
 
 @-webkit-keyframes pulsate-bck {
   0% {
@@ -419,9 +421,13 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); }
+  -webkit-backdrop-filter: blur(10px);
+  padding: 5px;
+  text-align: center; }
   .footer > p {
     color: #1a1a1a;
     font-size: 16px;
     font-weight: 600;
     font-style: normal; }
+    .footer > p a {
+      color: black; }

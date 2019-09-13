@@ -112,6 +112,9 @@ html.dark-theme {
         background-color: rgba($black, 0.8);
         &>p {
             color: $light;
+            a {
+                color: $white;
+            }
         }
     }
 }
