@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap");
+html.dark-theme html::-webkit-scrollbar-track,
+html.dark-theme body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.2); }
+
+html.dark-theme html::-webkit-scrollbar-thumb,
+html.dark-theme body::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.4); }
+
 html.dark-theme body {
   background-color: #1a1a1a; }
 
@@ -85,6 +95,19 @@ html,
 body {
   width: 100%;
   height: 100%; }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    width: 3px; }
+  html::-webkit-scrollbar-track,
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 3px; }
+  html::-webkit-scrollbar-thumb,
+  body::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+    border-radius: 3px; }
   html.no-scroll,
   body.no-scroll {
     overflow: hidden; }
@@ -116,7 +139,7 @@ body {
     padding: 0 5px;
     height: 90px;
     background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); }
@@ -166,13 +189,13 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 5px;
-  margin: 10px;
+  border-radius: 3px;
+  margin: 5px;
   padding: 5px; }
   .color-card .color-preview {
     width: 100%;
-    height: 100px;
-    border-radius: 5px; }
+    height: 50px;
+    border-radius: 3px; }
   .color-card .color-names {
     display: flex;
     flex-direction: column;
@@ -181,14 +204,14 @@ body {
     .color-card .color-names span:first-child {
       font-size: 20px;
       font-style: normal;
-      font-weight: 700;
-      line-height: 30px;
+      font-weight: 400;
+      line-height: 20px;
       color: black; }
     .color-card .color-names span:last-child {
-      font-size: 15px;
+      font-size: 16px;
       font-style: normal;
-      font-weight: 600;
-      line-height: 22, 5px;
+      font-weight: 300;
+      line-height: 16px;
       color: black; }
   .color-card .color-values {
     display: flex;
@@ -203,10 +226,9 @@ body {
       background-color: teal;
       font-size: 15px;
       margin: 5px 0 0 0;
-      border-radius: 5px;
+      border-radius: 3px;
       font-style: normal;
-      font-weight: 400;
-      line-height: 22.5px;
+      font-weight: 600;
       cursor: pointer;
       color: white; }
       .color-card .color-values .color-btn:hover {
@@ -222,7 +244,7 @@ body {
   background-color: white;
   color: black;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 3px;
   font-size: 20px;
   line-height: 30px;
   font-weight: 600;
@@ -234,10 +256,10 @@ body {
 
 .color-nav-btn {
   position: fixed;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   left: 5px;
-  bottom: 5px;
+  bottom: 10px;
   border: none;
   font-size: 24px;
   text-align: center;
@@ -310,7 +332,7 @@ body {
       .color-nav ul li a .color-circle {
         display: block;
         border: 5px double #e6e6e6;
-        border-radius: 5000px;
+        border-radius: 3000px;
         width: 20px;
         height: 20px;
         margin: 0 10px 0 0; }
