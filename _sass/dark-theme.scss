@@ -58,20 +58,22 @@ html.dark-theme {
     .color-nav-btn {
         background-color: $black;
         color: $white;
+        border: 5px double $dark;
     }
 
     // Color Nav
     .color-nav {
         background-color: $black;
 
+        .title {
+            color: $light;
+        }
+
         .divider {
             border: 1px solid rgba($white, 0.1);
         }
 
         ul {
-            .title {
-                color: $light;
-            }
 
             li a {
                 color: $white;
@@ -103,5 +105,13 @@ html.dark-theme {
 
     .switch--shadow:checked+label:before {
         background-color: $dark;
+    }
+
+    // Footer
+    .footer {
+        background-color: rgba($black, 0.8);
+        &>p {
+            color: $light;
+        }
     }
 }
