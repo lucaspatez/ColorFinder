@@ -1,18 +1,6 @@
 // Dark Theme Settings
 html.dark-theme {
 
-    html,
-    body {
-        &::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 6px rgba($white, 0.3);
-            -webkit-box-shadow: inset 0 0 6px rgba($white, 0.2);
-        }
-        &::-webkit-scrollbar-thumb {
-            box-shadow: inset 0 0 6px rgba($white, 0.6);
-            -webkit-box-shadow: inset 0 0 6px rgba($white, 0.4);
-        }
-    }
-
     // Body
     body {
         background-color: $dark;

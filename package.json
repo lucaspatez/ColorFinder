@@ -1,6 +1,6 @@
 {
   "name": "colorfinder",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Um Aplicativo Web desenvolvido para ajudar pessoas com cores de forma dinâmica",
   "main": "index.js",
   "author": "Lucas Patêz",
