@@ -1,6 +1,6 @@
 {
   "name": "colorfinder",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Um Aplicativo Web desenvolvido para ajudar pessoas com cores de forma dinâmica",
   "main": "index.js",
   "author": "Lucas Patêz",
@@ -10,8 +10,10 @@
     "css-deploy": "yarn run css-build && yarn run css-postcss",
     "css-postcss": "postcss --use autoprefixer --output css/main.css css/main.css",
     "css-watch": "yarn run css-build --watch",
-    "deploy": "yarn run css-deploy && yarn run js-build",
+    "deploy": "yarn run css-deploy && yarn run js-deploy",
     "js-build": "babel _javascript --out-dir lib",
+    "js-minify": "terser lib/main.js -c -m -o lib/main.min.js",
+    "js-deploy": "yarn run js-build && yarn run js-minify",
     "js-watch": "yarn run js-build --watch",
     "start": "npm-run-all --parallel css-watch js-watch"
   },
@@ -22,6 +24,7 @@
     "babel-preset-es2015-ie": "^6.7.0",
     "node-sass": "^4.12.0",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^6.1.3"
+    "postcss-cli": "^6.1.3",
+    "terser": "^4.3.4"
   }
 }

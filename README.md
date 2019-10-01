@@ -1,4 +1,4 @@
-# ColorFinder [1.0.4]
+# ColorFinder [1.0.5]
 ## [Encontre sua Cor](https://colorfinder.netlify.com)
 
 ### Changelog
