@@ -1,0 +1,108 @@
+// Light Theme Settings
+
+@media (prefers-color-scheme: light) {
+
+    // Body
+    body {
+        background-color: $light;
+    }
+
+    // Header
+    .header {
+        background-image: url('../assets/images/LightHeader.svg');
+
+        .header-container {
+            background-color: rgba($white, 0.8);
+
+            .header-title {
+                color: $primary;
+            }
+
+            .header-version {
+                color: $primary;
+            }
+        }
+    }
+
+    // Section
+    .section {
+        .section-title {
+            color: $black;
+        }
+    }
+
+    // ColorCard
+    .color-card {
+        background-color: rgba($white, 0.8);
+
+        .color-names {
+
+            span:first-child,
+            span:last-child {
+                color: $black;
+            }
+        }
+    }
+
+    // ColorNotification
+    .color-notification {
+        background-color: $white;
+        color: $black;
+    }
+
+    // Color Nav Button
+    .color-nav-btn {
+        background-color: $light;
+        color: $primary;
+        border: 1px solid $primary;
+    }
+
+    // Color Nav
+    .color-nav {
+        background-color: $white;
+
+        .title {
+            color: $dark;
+        }
+
+        .divider {
+            border: 1px solid rgba($black, 0.1);
+        }
+
+        ul {
+
+            li a {
+                color: $black;
+                background-color: $white;
+
+                &:hover {
+                    background-color: $light;
+                }
+
+                .color-circle {
+                    border: 5px double $light;
+                }
+            }
+        }
+    }
+
+    // Footer
+    .footer {
+        background-color: rgba($white, 0.8);
+
+        &>small {
+            color: $dark;
+
+            a {
+                color: $black;
+            }
+        }
+    }
+
+    // Back Button
+    .back-btn {
+        color: $black;
+        background-color: $white;
+    }
+
+}

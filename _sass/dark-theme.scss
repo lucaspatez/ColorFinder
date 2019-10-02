@@ -1,5 +1,6 @@
 // Dark Theme Settings
-html.dark-theme {
+
+@media (prefers-color-scheme: dark) {
 
     // Body
     body {
@@ -12,6 +13,14 @@ html.dark-theme {
 
         .header-container {
             background-color: rgba($black, 0.8);
+
+            .header-title {
+                color: $light;
+            }
+
+            .header-version {
+                color: white;
+            }
         }
     }
 
@@ -25,10 +34,9 @@ html.dark-theme {
     // ColorCard
     .color-card {
         background-color: rgba($black, 0.8);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
 
         .color-names {
+
             span:first-child,
             span:last-child {
                 color: $white;
@@ -44,9 +52,9 @@ html.dark-theme {
 
     // Color Nav Button
     .color-nav-btn {
-        background-color: $black;
-        color: $white;
-        border: 5px double $dark;
+        background-color: $dark;
+        color: $light;
+        border: 1px solid $light;
     }
 
     // Color Nav
@@ -78,31 +86,23 @@ html.dark-theme {
         }
     }
 
-    // DT Switcher
-    .switch--shadow+label {
-        background-color: rgba($white, 0.2);
-    }
-
-    .switch--shadow+label:before {
-        background-color: $dark;
-    }
-
-    .switch--shadow+label:after {
-        background-color: $primary;
-    }
-
-    .switch--shadow:checked+label:before {
-        background-color: $dark;
-    }
-
     // Footer
     .footer {
         background-color: rgba($black, 0.8);
-        &>p {
+
+        &>small {
             color: $light;
+
             a {
                 color: $white;
             }
         }
     }
+
+    // Back Button
+    .back-btn {
+        color: $white;
+        background-color: $black;
+    }
+
 }

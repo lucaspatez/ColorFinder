@@ -1,7 +1,9 @@
-# ColorFinder [1.0.5]
+# ColorFinder [1.0.6]
 ## [Encontre sua Cor](https://colorfinder.netlify.com)
 
 ### Changelog
+#### *02/10/2019*
+- Redesign da página *WIP*.
 #### *30/09/2019*
 - A troca de tmeas se tornou mais suave.
 #### *13/09/2019*
