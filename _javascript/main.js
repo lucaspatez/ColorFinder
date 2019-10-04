@@ -1,16 +1,22 @@
+// SmoothScroll
+var scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 1000,
+  speedAsDuration: true
+});
+
 // ModalNotification
-var colorNotification = document.querySelector('#color-notification');
+const colorNotification = document.querySelector('#color-notification');
 
 // Open ModalNotification
 function openColorNotification() {
-  colorNotification.style.display = 'block';
+  colorNotification.classList.add('show-cn');
   overlay.classList.add('show-o');
 }
 
 // Close ModalNotificationOnDelay
 function closeColorNotificationOnDelay() {
   setTimeout(function () {
-    colorNotification.style.display = 'none';
+    colorNotification.classList.remove('show-cn');
     overlay.classList.remove('show-o');
   }, 1100);
 }
@@ -19,7 +25,7 @@ function closeColorNotificationOnDelay() {
 var clipboard = new ClipboardJS('.color-btn');
 
 clipboard.on('success', function (e) {
-  openColorNotification()
+  openColorNotification();
   closeColorNotificationOnDelay();
   console.log('Action:', e.action);
   console.log('Text:', e.text);

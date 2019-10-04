@@ -91,6 +91,12 @@
 </head>
 
 <body>
+    <!-- Color Notification -->
+    <div class="color-notification" id="color-notification">
+        <i class="fas fa-copy" style="margin: 0 5px;"></i> Cor Copiada com sucesso! <i class="fas fa-check"
+            style="margin: 0 5px;"></i>
+    </div>
+
     <!-- Overlay -->
     <div id="overlay"></div>
 
@@ -101,27 +107,35 @@
         <span class="title">Interações</span>
         <ul>
             <li><a id="share-btn"><i class="icon fas fa-share-alt"></i> Compartilhar</a></li>
-            <li><a href="https://github.com/lucaspatez/ColorFinder"><i class="icon fab fa-github-alt"></i> Repositório Github</a></li>
+            <li><a href="https://github.com/lucaspatez/ColorFinder"><i class="icon fab fa-github-alt"></i> Repositório
+                    Github</a></li>
         </ul>
         <hr class="divider">
         <span class="title">Navegar até Tons de...</span>
         <ul>
-            <li><a href="pages/gray-colors.html"><span class="color-circle" style="background-color: Gray;"></span> Cinza</a></li>
-            <li><a href="pages/blue-colors.html"><span class="color-circle" style="background-color: Blue;"></span> Azul</a></li>
-            <li><a href="pages/red-colors.html"><span class="color-circle" style="background-color: Red;"></span> Vermelho</a>
+            <li><a href="#gray-colors"><span class="color-circle" style="background-color: Gray;"></span>
+                    Cinza</a></li>
+            <li><a href="#blue-colors"><span class="color-circle" style="background-color: Blue;"></span>
+                    Azul</a></li>
+            <li><a href="#red-colors"><span class="color-circle" style="background-color: Red;"></span>
+                    Vermelho</a>
             </li>
-            <li><a href="pages/pink-colors.html"><span class="color-circle" style="background-color: Pink;"></span> Rosa</a></li>
-            <li><a href="pages/orange-colors.html"><span class="color-circle" style="background-color: Orange;"></span>
+            <li><a href="#pink-colors"><span class="color-circle" style="background-color: Pink;"></span>
+                    Rosa</a></li>
+            <li><a href="#orange-colors"><span class="color-circle" style="background-color: Orange;"></span>
                     Laranja</a></li>
-            <li><a href="pages/brown-colors.html"><span class="color-circle" style="background-color: Brown;"></span> Marrom</a>
+            <li><a href="#brown-colors"><span class=" color-circle" style="background-color: Brown;"></span>
+                    Marrom</a>
             </li>
-            <li><a href="pages/yellow-colors.html"><span class="color-circle" style="background-color: Yellow;"></span>
+            <li><a href="#yellow-colors"><span class="color-circle" style="background-color: Yellow;"></span>
                     Amarelo</a></li>
-            <li><a href="pages/white-colors.html"><span class="color-circle" style="background-color: White;"></span>
+            <li><a href="#white-colors"><span class="color-circle" style="background-color: White;"></span>
                     Branco/Pastel</a></li>
-            <li><a href="pages/purple-colors.html"><span class="color-circle" style="background-color: Purple;"></span> Roxo</a>
+            <li><a href="#purple-colors"><span class="color-circle" style="background-color: Purple;"></span>
+                    Roxo</a>
             </li>
-            <li><a href="pages/green-colors.html"><span class="color-circle" style="background-color: Green;"></span> Verde</a>
+            <li><a href="#green-colors"><span class="color-circle" style="background-color: Green;"></span>
+                    Verde</a>
             </li>
         </ul>
     </nav>
@@ -130,18 +144,2217 @@
         <div class="header-container">
             <img class="header-logo" src="assets/images/ColorFinderLogo.svg" alt="Logo">
             <h1 class="header-title">ColorFinder</h1>
-            <small class="header-version">v1.0.6</small>
+            <small class="header-version">v1.0.7</small>
         </div>
     </header>
 
     <main class="main">
 
+        <!-- Gray Colors Section -->
+        <section class="section" id="gray-colors">
+            <h2 class="section-title">Tons de Cinza</h2>
 
+            <div class="color-card__group">
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Gainsboro;"></div>
+                    <div class="color-names">
+                        <span>Gainsboro</span>
+                        <span>Cinza Médio</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#DCDCDC">#DCDCDC</button>
+                        <button class="color-btn" data-clipboard-text="rgb(220, 220, 220)">rgb(220, 220, 220)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(0, 0%, 86%)">hsl(0, 0%, 86%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 0%, 0%, 14%)">cmyk(0%, 0%, 0%,
+                            14%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: LightGray;"></div>
+                    <div class="color-names">
+                        <span>LightGray</span>
+                        <span>Cinza Claro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#D3D3D3">#D3D3D3</button>
+                        <button class="color-btn" data-clipboard-text="rgb(211, 211, 211)">rgb(211, 211, 211)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(0, 0%, 83%)">hsl(0, 0%, 83%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 0%, 0%, 17%)">cmyk(0%, 0%, 0%,
+                            17%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Silver;"></div>
+                    <div class="color-names">
+                        <span>Silver</span>
+                        <span>Prata</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#C0C0C0">#C0C0C0</button>
+                        <button class="color-btn" data-clipboard-text="rgb(192, 192, 192)">rgb(192, 192, 192)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(0, 0%, 75%)">hsl(0, 0%, 75%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 0%, 0%, 25%)">cmyk(0%, 0%, 0%,
+                            25%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: DarkGray;"></div>
+                    <div class="color-names">
+                        <span>DarkGray</span>
+                        <span>Cinza Escuro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#A9A9A9">#A9A9A9</button>
+                        <button class="color-btn" data-clipboard-text="rgb(169, 169, 169)">rgb(169, 169, 169)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(0, 0%, 66%)">hsl(0, 0%, 66%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 0%, 0%, 34%)">cmyk(0%, 0%, 0%,
+                            34%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Gray;"></div>
+                    <div class="color-names">
+                        <span>Gray</span>
+                        <span>Cinza</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#808080">#808080</button>
+                        <button class="color-btn" data-clipboard-text="rgb(128, 128, 128)">rgb(128, 128, 128)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(0, 0%, 50%)">hsl(0, 0%, 50%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 0%, 0%, 50%)">cmyk(0%, 0%, 0%,
+                            50%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: DimGray;"></div>
+                    <div class="color-names">
+                        <span>DimGray</span>
+                        <span>Cinza Fosco</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#696969">#696969</button>
+                        <button class="color-btn" data-clipboard-text="rgb(105, 105, 105)">rgb(105, 105, 105)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(0, 0%, 41%)">hsl(0, 0%, 41%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 0%, 0%, 59%)">cmyk(0%, 0%, 0%,
+                            59%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: LightSlateGray;"></div>
+                    <div class="color-names">
+                        <span>LightSlateGray</span>
+                        <span>Cinza Ardósia Claro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#778899">#778899</button>
+                        <button class="color-btn" data-clipboard-text="rgb(119, 136, 153)">rgb(119, 136, 153)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(210, 14%, 53%)">hsl(210, 14%, 53%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(22%, 11%, 0%, 40%)">cmyk(22%, 11%, 0%,
+                            40%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: SlateGray;"></div>
+                    <div class="color-names">
+                        <span>SlateGray</span>
+                        <span>Cinza Ardósia</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#708090">#708090</button>
+                        <button class="color-btn" data-clipboard-text="rgb(112, 128, 144)">rgb(112, 128, 144)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(210, 13%, 50%)">hsl(210, 13%, 50%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(22%, 11%, 0%, 44%)">cmyk(22%, 11%, 0%,
+                            44%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Black;"></div>
+                    <div class="color-names">
+                        <span>Black</span>
+                        <span>Preto</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#000000">#000000</button>
+                        <button class="color-btn" data-clipboard-text="rgb(0, 0, 0)">rgb(0, 0, 0)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(0, 0%, 0%)">hsl(0, 0%, 0%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 0%, 0%, 100%)">cmyk(0%, 0%, 0%,
+                            100%)</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Blue Colors Section -->
+        <section class="section" id="blue-colors">
+            <h2 class="section-title">Tons de Azul</h2>
+
+            <div class="color-card__group">
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Aqua;"></div>
+                    <div class="color-names">
+                        <span>Aqua/Cyan</span>
+                        <span>Água/Ciano</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#00FFFF">#00FFFF</button>
+                        <button class="color-btn" data-clipboard-text="rgb(0, 255, 255)">rgb(0, 255, 255)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(180, 100%, 50%)">hsl(180, 100%, 50%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(100%, 0%, 0%, 0%)">cmyk(100%, 0%, 0%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: LightCyan;"></div>
+                    <div class="color-names">
+                        <span>LightCyan</span>
+                        <span>Ciano Claro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#E0FFFF">#E0FFFF</button>
+                        <button class="color-btn" data-clipboard-text="rgb(224, 255, 255)">rgb(224, 255, 255)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(180, 100%, 94%)">hsl(180, 100%, 94%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(12%, 0%, 0%, 0%)">cmyk(12%, 0%, 0%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: PaleTurquoise;"></div>
+                    <div class="color-names">
+                        <span>PaleTurquoise</span>
+                        <span>Turquesa Pálida</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#AFEEEE">#AFEEEE</button>
+                        <button class="color-btn" data-clipboard-text="rgb(175, 238, 238)">rgb(175, 238, 238)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(180, 65%, 81%)">hsl(180, 65%, 81%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(26%, 0%, 0%, 7%)">cmyk(26%, 0%, 0%,
+                            7%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Aquamarine;"></div>
+                    <div class="color-names">
+                        <span>Aquamarine</span>
+                        <span>Água-marinha</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#7FFFD4">#7FFFD4</button>
+                        <button class="color-btn" data-clipboard-text="rgb(127, 255, 212)">rgb(127, 255, 212)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(160, 100%, 75%)">hsl(160, 100%, 75%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(50%, 0%, 17%, 0%)">cmyk(50%, 0%, 17%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Turquoise;"></div>
+                    <div class="color-names">
+                        <span>Turquoise</span>
+                        <span>Turquesa</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#40E0D0">#40E0D0</button>
+                        <button class="color-btn" data-clipboard-text="rgb(64, 224, 208)">rgb(64, 224, 208)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(174, 72%, 56%)">hsl(174, 72%, 56%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(71%, 0%, 7%, 12%)">cmyk(71%, 0%, 7%,
+                            12%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: MediumTurquoise;"></div>
+                    <div class="color-names">
+                        <span>MediumTurquoise</span>
+                        <span>Turquesa Média</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#48D1CC">#48D1CC</button>
+                        <button class="color-btn" data-clipboard-text="rgb(72, 209, 204)">rgb(72, 209, 204)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(178, 60%, 55%)">hsl(178, 60%, 55%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(66%, 0%, 2%, 18%)">cmyk(66%, 0%, 2%,
+                            18%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: DarkTurquoise;"></div>
+                    <div class="color-names">
+                        <span>DarkTurquoise</span>
+                        <span>Turquesa Escura</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#00CED1">#00CED1</button>
+                        <button class="color-btn" data-clipboard-text="rgb(0, 206, 209)">rgb(0, 206, 209)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(181, 100%, 41%)">hsl(181, 100%, 41%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(100%, 1%, 0%, 18%)">cmyk(100%, 1%, 0%,
+                            18%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: CadetBlue;"></div>
+                    <div class="color-names">
+                        <span>CadetBlue</span>
+                        <span>Azul Cadete</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#5F9EA0">#5F9EA0</button>
+                        <button class="color-btn" data-clipboard-text="rgb(95, 158, 160)">rgb(95, 158, 160)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(182, 25%, 50%)">hsl(182, 25%, 50%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(41%, 1%, 0%, 37%)">cmyk(41%, 1%, 0%,
+                            37%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: SteelBlue;"></div>
+                    <div class="color-names">
+                        <span>SteelBlue</span>
+                        <span>Azul Aço</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#4682B4<">#4682B4</button>
+                        <button class="color-btn" data-clipboard-text="rgb(70, 130, 180)">rgb(70, 130, 180)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(207, 44%, 49%)">hsl(207, 44%, 49%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(61%, 28%, 0%, 29%)">cmyk(61%, 28%, 0%,
+                            29%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: LightSteelBlue;"></div>
+                    <div class="color-names">
+                        <span>LightSteelBlue</span>
+                        <span>Azul Aço Claro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#B0C4DE">#B0C4DE</button>
+                        <button class="color-btn" data-clipboard-text="rgb(176, 196, 222)">rgb(176, 196, 222)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(214, 41%, 78%)">hsl(214, 41%, 78%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(21%, 12%, 0%, 13%)">cmyk(21%, 12%, 0%,
+                            13%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: PowderBlue;"></div>
+                    <div class="color-names">
+                        <span>PowderBlue</span>
+                        <span>Azul Pólvora</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#B0E0E6">#B0E0E6</button>
+                        <button class="color-btn" data-clipboard-text="rgb(176, 224, 230)">rgb(176, 224, 230)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(187, 52%, 80%)">hsl(187, 52%, 80%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(23%, 3%, 0%, 10%)">cmyk(23%, 3%, 0%,
+                            10%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: LightBlue;"></div>
+                    <div class="color-names">
+                        <span>LightBlue</span>
+                        <span>Azul Claro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#ADD8E6">#ADD8E6</button>
+                        <button class="color-btn" data-clipboard-text="rgb(173, 216, 230)">rgb(173, 216, 230)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(195, 53%, 79%)">hsl(195, 53%, 79%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(25%, 6%, 0%, 10%)">cmyk(25%, 6%, 0%,
+                            10%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: SkyBlue;"></div>
+                    <div class="color-names">
+                        <span>SkyBlue</span>
+                        <span>Azul Céu</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#87CEEB">#87CEEB</button>
+                        <button class="color-btn" data-clipboard-text="rgb(135, 206, 235)">rgb(135, 206, 235)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(197, 71%, 73%)">hsl(197, 71%, 73%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(43%, 12%, 0%, 8%)">cmyk(43%, 12%, 0%,
+                            8%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: LightSkyBlue;"></div>
+                    <div class="color-names">
+                        <span>LightSkyBlue</span>
+                        <span>Azul Céu Claro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#87CEFA">#87CEFA</button>
+                        <button class="color-btn" data-clipboard-text="rgb(135, 206, 250)">rgb(135, 206, 250)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(203, 92%, 75%)">hsl(203, 92%, 75%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(46%, 18%, 0%, 2%)">cmyk(46%, 18%, 0%,
+                            2%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: DeepSkyBlue;"></div>
+                    <div class="color-names">
+                        <span>DeepSkyBlue</span>
+                        <span>Azul Céu Profundo</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#00BFFF">#00BFFF</button>
+                        <button class="color-btn" data-clipboard-text="rgb(0, 191, 255)">rgb(0, 191, 255)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(195, 100%, 50%)">hsl(195, 100%, 50%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(100%, 25%, 0%, 0%)">cmyk(100%, 25%, 0%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: DodgerBlue;"></div>
+                    <div class="color-names">
+                        <span>DodgerBlue</span>
+                        <span>Azul Furtivo</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#1E90FF">#1E90FF</button>
+                        <button class="color-btn" data-clipboard-text="rgb(30, 144, 255)">rgb(30, 144, 255)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(210, 100%, 56%)">hsl(210, 100%, 56%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(88%, 44%, 0%, 0%)">cmyk(88%, 44%, 0%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: CornFlowerBlue;"></div>
+                    <div class="color-names">
+                        <span>CornFlowerBlue</span>
+                        <span>Azul Flor de Milho</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#6495ED">#6495ED</button>
+                        <button class="color-btn" data-clipboard-text="rgb(100, 149, 237)">rgb(100, 149, 237)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(219, 79%, 66%)">hsl(219, 79%, 66%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(58%, 37%, 0%, 7%)">cmyk(58%, 37%, 0%,
+                            7%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: MediumSlateBlue;"></div>
+                    <div class="color-names">
+                        <span>MediumSlateBlue</span>
+                        <span>Azul Ardósia Médio</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#7B68EE">#7B68EE</button>
+                        <button class="color-btn" data-clipboard-text="rgb(123, 104, 238)">rgb(123, 104, 238)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(249, 80%, 67%)">hsl(249, 80%, 67%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(48%, 56%, 0%, 7%)">cmyk(48%, 56%, 0%,
+                            7%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: RoyalBlue;"></div>
+                    <div class="color-names">
+                        <span>RoyalBlue</span>
+                        <span>Azul Real</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#4169E1">#4169E1</button>
+                        <button class="color-btn" data-clipboard-text="rgb(65, 105, 225)">rgb(65, 105, 225)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(225, 73%, 57%)">hsl(225, 73%, 57%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(71%, 53%, 0%, 12%)">cmyk(71%, 53%, 0%,
+                            12%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Blue;"></div>
+                    <div class="color-names">
+                        <span>Blue</span>
+                        <span>Azul</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#0000FF">#0000FF</button>
+                        <button class="color-btn" data-clipboard-text="rgb(0, 0, 255)">rgb(0, 0, 255)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(240, 100%, 50%)">hsl(240, 100%, 50%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(100%, 100%, 0%, 0%)">cmyk(100%, 100%, 0%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: MediumBlue;"></div>
+                    <div class="color-names">
+                        <span>MediumBlue</span>
+                        <span>Azul Médio</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#0000CD">#0000CD</button>
+                        <button class="color-btn" data-clipboard-text="rgb(0, 0, 205)">rgb(0, 0, 205)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(240, 100%, 27%)">hsl(240, 100%, 27%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(100%, 100%, 0%, 45%)">cmyk(100%, 100%, 0%,
+                            45%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: DarkBlue;"></div>
+                    <div class="color-names">
+                        <span>DarkBlue</span>
+                        <span>Azul Escuro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#00008B">#00008B</button>
+                        <button class="color-btn" data-clipboard-text="rgb(0, 0, 139)">rgb(0, 0, 139)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(240, 100%, 27%)">hsl(240, 100%, 27%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(100%, 100%, 0%, 45%)">cmyk(100%, 100%, 0%,
+                            45%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Navy;"></div>
+                    <div class="color-names">
+                        <span>Navy</span>
+                        <span>Naval</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#000080">#000080</button>
+                        <button class="color-btn" data-clipboard-text="rgb(0,0,128)">rgb(0,0,128)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(240, 100%, 25%)">hsl(240, 100%, 25%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(100%, 100%, 0%, 50%)">cmyk(100%, 100%, 0%,
+                            50%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: MidnightBlue;"></div>
+                    <div class="color-names">
+                        <span>MidnightBlue</span>
+                        <span>Azul Meia-Noite</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#191970">#191970</button>
+                        <button class="color-btn" data-clipboard-text="rgb(25, 25, 112)">rgb(25, 25, 112)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(240, 64%, 27%)">hsl(240, 64%, 27%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(78%, 78%, 0%, 56%)">cmyk(78%, 78%, 0%,
+                            56%)</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Red Colors Section -->
+        <section class="section" id="red-colors">
+            <h2 class="section-title">Tons de Vermelho</h2>
+
+            <div class="color-card__group">
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: IndianRed;"></div>
+                    <div class="color-names">
+                        <span>IndianRed</span>
+                        <span>Vermelho Indiano</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#CD5C5C">#CD5C5C</button>
+                        <button class="color-btn" data-clipboard-text="rgb(205, 92, 92)">rgb(205, 92, 92)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(0, 53%, 58%)">hsl(0, 53%, 58%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 55%, 55%, 20%)">cmyk(0%, 55%, 55%,
+                            20%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: LightCoral;"></div>
+                    <div class="color-names">
+                        <span>LightCoral</span>
+                        <span>Coral Claro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#F08080">#F08080</button>
+                        <button class="color-btn" data-clipboard-text="rgb(240, 128, 128)">rgb(240, 128, 128)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(0, 79%, 72%)">hsl(0, 79%, 72%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 47%, 47%, 6%)">cmyk(0%, 47%, 47%,
+                            6%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Salmon;"></div>
+                    <div class="color-names">
+                        <span>Salmon</span>
+                        <span>Salmão</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FA8072">#FA8072</button>
+                        <button class="color-btn" data-clipboard-text="rgb(250, 128, 114)">rgb(250, 128, 114)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(6, 93%, 71%)">hsl(6, 93%, 71%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 49%, 54%, 2%)">cmyk(0%, 49%, 54%,
+                            2%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: DarkSalmon;"></div>
+                    <div class="color-names">
+                        <span>DarkSalmon</span>
+                        <span>Salmão Escuro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#E9967A">#E9967A</button>
+                        <button class="color-btn" data-clipboard-text="rgb(233, 150, 122)">rgb(233, 150, 122)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(15, 72%, 70%)">hsl(15, 72%, 70%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 36%, 48%, 9%)">cmyk(0%, 36%, 48%,
+                            9%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: LightSalmon;"></div>
+                    <div class="color-names">
+                        <span>LightSalmon</span>
+                        <span>Salmão Claro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFA07A">#FFA07A</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 160, 122)">rgb(255, 160, 122)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(17, 100%, 74%)">hsl(17, 100%, 74%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 37%, 52%, 0%)">cmyk(0%, 37%, 52%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Crimson;"></div>
+                    <div class="color-names">
+                        <span>Crimson</span>
+                        <span>Carmesim</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#DC143C">#DC143C</button>
+                        <button class="color-btn" data-clipboard-text="rgb(220, 20, 60)">rgb(220, 20, 60)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(348, 83%, 47%)">hsl(348, 83%, 47%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 91%, 73%, 14%)">cmyk(0%, 91%, 73%,
+                            14%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Red;"></div>
+                    <div class="color-names">
+                        <span>Red</span>
+                        <span>Vermelho</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FF0000">#FF0000</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 0, 0)">rgb(255, 0, 0)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(0, 100%, 50%)">hsl(0, 100%, 50%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 100%, 100%, 0%)">cmyk(0%, 100%, 100%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: FireBrick;"></div>
+                    <div class="color-names">
+                        <span>FireBrick</span>
+                        <span>Tijolo Refratário</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#B22222">#B22222</button>
+                        <button class="color-btn" data-clipboard-text="rgb(112, 128, 144)">rgb(112, 128, 144)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(0, 68%, 42%)">hsl(0, 68%, 42%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 81%, 81%, 30%)">cmyk(0%, 81%, 81%,
+                            30%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: DarkRed;"></div>
+                    <div class="color-names">
+                        <span>DarkRed</span>
+                        <span>Vermelho Escuro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#8B0000">#8B0000</button>
+                        <button class="color-btn" data-clipboard-text="rgb(139, 0, 0)">rgb(139, 0, 0)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(0, 100%, 27%)">hsl(0, 100%, 27%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 100%, 100%, 45%)">cmyk(0%, 100%, 100%,
+                            45%)</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Pink Colors Section -->
+        <section class="section" id="pink-colors">
+            <h2 class="section-title">Tons de Rosa</h2>
+
+            <div class="color-card__group">
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Pink;"></div>
+                    <div class="color-names">
+                        <span>Pink</span>
+                        <span>Rosa</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFC0CB">#FFC0CB</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 192, 203)">rgb(255, 192, 203)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(350, 100%, 88%)">hsl(350, 100%, 88%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 25%, 20%, 0%)">cmyk(0%, 25%, 20%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: LightPink;"></div>
+                    <div class="color-names">
+                        <span>LightPink</span>
+                        <span>Rosa Claro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFB6C1">#FFB6C1</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 182, 193)">rgb(255, 182, 193)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(351, 100%, 86%)">hsl(351, 100%, 86%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 29%, 24%, 0%)">cmyk(0%, 29%, 24%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: HotPink;"></div>
+                    <div class="color-names">
+                        <span>HotPink</span>
+                        <span>Rosa Forte</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FF69B4">#FF69B4</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 105, 180)">rgb(255, 105, 180)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(330, 100%, 71%)">hsl(330, 100%, 71%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 59%, 29%, 0%)">cmyk(0%, 59%, 29%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: DeepPink;"></div>
+                    <div class="color-names">
+                        <span>DeepPink</span>
+                        <span>Rosa Profundo</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FF1493">#FF1493</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 20, 147)">rgb(255, 20, 147)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(328, 100%, 54%)">hsl(328, 100%, 54%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 92%, 42%, 0%)">cmyk(0%, 92%, 42%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: MediumVioletRed;"></div>
+                    <div class="color-names">
+                        <span>MediumVioletRed</span>
+                        <span>Vermelho Violeta Médio</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#C71585">#C71585</button>
+                        <button class="color-btn" data-clipboard-text="rgb(199, 21, 133)">rgb(199, 21, 133)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(322, 81%, 43%)">hsl(322, 81%, 43%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 89%, 33%, 22%)">cmyk(0%, 89%, 33%,
+                            22%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: PaleVioletRed;"></div>
+                    <div class="color-names">
+                        <span>PaleVioletRed</span>
+                        <span>Vermelho Violeta Pálido</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#DB7093">#DB7093</button>
+                        <button class="color-btn" data-clipboard-text="rgb(219, 112, 147)">rgb(219, 112, 147)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(340, 60%, 65%)">hsl(340, 60%, 65%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 49%, 33%, 14%)">cmyk(0%, 49%, 33%,
+                            14%)</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Orange Colors Section -->
+        <section class="section" id="orange-colors">
+            <h2 class="section-title">Tons de Laranja</h2>
+
+            <div class="color-card__group">
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: LightSalmon;"></div>
+                    <div class="color-names">
+                        <span>LightSalmon</span>
+                        <span>Salmão Claro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFA07A">#FFA07A</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 160, 122)">rgb(255, 160, 122)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(17, 100%, 74%)">hsl(17, 100%, 74%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 37%, 52%, 0%)">cmyk(0%, 37%, 52%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Coral;"></div>
+                    <div class="color-names">
+                        <span>Coral</span>
+                        <span>Coral</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FF7F50">#FF7F50</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 127, 80)">rgb(255, 127, 80)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(16, 100%, 66%)">hsl(16, 100%, 66%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 50%, 69%, 0%)">cmyk(0%, 50%, 69%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Tomato;"></div>
+                    <div class="color-names">
+                        <span>Tomato</span>
+                        <span>Tomate</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FF6347">#FF6347</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 99, 71)">rgb(255, 99, 71)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(9, 100%, 64%)">hsl(9, 100%, 64%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 61%, 72%, 0%)">cmyk(0%, 61%, 72%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: OrangeRed;"></div>
+                    <div class="color-names">
+                        <span>OrangeRed</span>
+                        <span>Jambo</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FF4500">#FF4500</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 69, 0)">rgb(255, 69, 0)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(16, 100%, 50%)">hsl(16, 100%, 50%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 73%, 100%, 0%)">cmyk(0%, 73%, 100%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: DarkOrange;"></div>
+                    <div class="color-names">
+                        <span>DarkOrange</span>
+                        <span>Laranja Escuro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FF8C00">#FF8C00</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 140, 0)">rgb(255, 140, 0)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(33, 100%, 50%)">hsl(33, 100%, 50%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 45%, 100%, 0%)">cmyk(0%, 45%, 100%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Orange;"></div>
+                    <div class="color-names">
+                        <span>Orange</span>
+                        <span>Laranja</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFA500">#FFA500</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 165, 0)">rgb(255, 165, 0)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(39, 100%, 50%)">hsl(39, 100%, 50%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 35%, 100%, 0%)">cmyk(0%, 35%, 100%,
+                            0%)</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brown Colors Section -->
+        <section class="section" id="brown-colors">
+            <h2 class="section-title">Tons de Marrom</h2>
+
+            <div class="color-card__group">
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: CornSilk;"></div>
+                    <div class="color-names">
+                        <span>CornSilk</span>
+                        <span>Milho Claro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFF8DC">#FFF8DC</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 248, 220)">rgb(255, 248, 220)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(48, 100%, 93%)">hsl(48, 100%, 93%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 3%, 14%, 0%)">cmyk(0%, 3%, 14%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Blanchedalmond;"></div>
+                    <div class="color-names">
+                        <span>Blanchedalmond</span>
+                        <span>Amêndoa</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFEBCD">#FFEBCD</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 235, 205)">rgb(255, 235, 205)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(36, 100%, 90%)">hsl(36, 100%, 90%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 8%, 20%, 0%)">cmyk(0%, 8%, 20%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Bisque;"></div>
+                    <div class="color-names">
+                        <span>Bisque</span>
+                        <span>Creme de Marisco</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFE4C4">#FFE4C4</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 228, 196)">rgb(255, 228, 196)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(33, 100%, 88%)">hsl(33, 100%, 88%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 11%, 23%, 0%)">cmyk(0%, 11%, 23%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: NavajoWhite;"></div>
+                    <div class="color-names">
+                        <span>NavajoWhite</span>
+                        <span>Branco Navajo</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFDEAD">#FFDEAD</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 222, 173)">rgb(255, 222, 173)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(36, 100%, 84%)">hsl(36, 100%, 84%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 13%, 32%, 0%)">cmyk(0%, 13%, 32%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Wheat;"></div>
+                    <div class="color-names">
+                        <span>Wheat</span>
+                        <span>Trigo</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#F5DEB3">#F5DEB3</button>
+                        <button class="color-btn" data-clipboard-text="rgb(245, 222, 179)">rgb(245, 222, 179)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(39, 77%, 83%)">hsl(39, 77%, 83%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 9%, 27%, 4%)">cmyk(0%, 9%, 27%,
+                            4%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: BurlyWood;"></div>
+                    <div class="color-names">
+                        <span>BurlyWood</span>
+                        <span>Madeira</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#DEB887">#DEB887</button>
+                        <button class="color-btn" data-clipboard-text="rgb(222, 184, 135)">rgb(222, 184, 135)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(34, 57%, 70%)">hsl(34, 57%, 70%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 17%, 39%, 13%)">cmyk(0%, 17%, 39%,
+                            13%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Tan;"></div>
+                    <div class="color-names">
+                        <span>Tan</span>
+                        <span>Castanho Claro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#D2B48C">#D2B48C</button>
+                        <button class="color-btn" data-clipboard-text="rgb(210, 180, 140)">rgb(210, 180, 140)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(34, 44%, 69%)">hsl(34, 44%, 69%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 14%, 33%, 18%">cmyk(0%, 14%, 33%,
+                            18%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: RosyBrown;"></div>
+                    <div class="color-names">
+                        <span>RosyBrown</span>
+                        <span>Marrom Rosado</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#BC8F8F">#BC8F8F</button>
+                        <button class="color-btn" data-clipboard-text="rgb(188, 143, 143)">rgb(188, 143, 143)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(0, 25%, 65%)">hsl(0, 25%, 65%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 24%, 24%, 26%)">cmyk(0%, 24%, 24%,
+                            26%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: SandyBrown;"></div>
+                    <div class="color-names">
+                        <span>SandyBrown</span>
+                        <span>Marrom Amarelado</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#F4A460">#F4A460</button>
+                        <button class="color-btn" data-clipboard-text="rgb(244, 164, 96)">rgb(244, 164, 96)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(28, 87%, 67%)">hsl(28, 87%, 67%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 33%, 61%, 4%)">cmyk(0%, 33%, 61%,
+                            4%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: GoldenRod;"></div>
+                    <div class="color-names">
+                        <span>GoldenRod</span>
+                        <span>Dourado</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#DAA520">#DAA520</button>
+                        <button class="color-btn" data-clipboard-text="rgb(218, 165, 32)">rgb(218, 165, 32)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(43, 74%, 49%)">hsl(43, 74%, 49%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 24%, 85%, 15%)">cmyk(0%, 24%, 85%,
+                            15%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: DarkGoldenRod;"></div>
+                    <div class="color-names">
+                        <span>DarkGoldenRod</span>
+                        <span>Dourado Escuro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#B8860B">#B8860B</button>
+                        <button class="color-btn" data-clipboard-text="rgb(184, 134, 11)">rgb(184, 134, 11)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(43, 89%, 38%)">hsl(43, 89%, 38%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 27%, 94%, 28%)">cmyk(0%, 27%, 94%,
+                            28%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Peru;"></div>
+                    <div class="color-names">
+                        <span>Peru</span>
+                        <span>Pele</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#CD853F">#CD853F</button>
+                        <button class="color-btn" data-clipboard-text="rgb(205, 133, 63)">rgb(205, 133, 63)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(30, 59%, 53%)">hsl(30, 59%, 53%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 35%, 69%, 20%)">cmyk(0%, 35%, 69%,
+                            20%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Chocolate;"></div>
+                    <div class="color-names">
+                        <span>Chocolate</span>
+                        <span>Chocolate</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#D2691E">#D2691E</button>
+                        <button class="color-btn" data-clipboard-text="rgb(210, 105, 30)">rgb(210, 105, 30)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(25, 75%, 47%)">hsl(25, 75%, 47%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 50%, 86%, 18%)">cmyk(0%, 50%, 86%,
+                            18%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: SaddleBrown;"></div>
+                    <div class="color-names">
+                        <span>SaddleBrown</span>
+                        <span>Marrom Sela</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#8B4513">#8B4513</button>
+                        <button class="color-btn" data-clipboard-text="rgb(139, 69, 19)">rgb(139, 69, 19)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(25, 76%, 31%)">hsl(25, 76%, 31%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 50%, 86%, 45%)">cmyk(0%, 50%, 86%,
+                            45%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Sienna;"></div>
+                    <div class="color-names">
+                        <span>Sienna</span>
+                        <span>Sienna</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#A0522D">#A0522D</button>
+                        <button class="color-btn" data-clipboard-text="rgb(160, 82, 45)">rgb(160, 82, 45)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(19, 56%, 40%)">hsl(19, 56%, 40%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 49%, 72%, 37%)">cmyk(0%, 49%, 72%,
+                            37%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Brown;"></div>
+                    <div class="color-names">
+                        <span>Brown</span>
+                        <span>Marrom</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#A52A2A">#A52A2A</button>
+                        <button class="color-btn" data-clipboard-text="rgb(165, 42, 42)">rgb(165, 42, 42)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(0, 59%, 41%)">hsl(0, 59%, 41%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 75%, 75%, 35%)">cmyk(0%, 75%, 75%,
+                            35%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Maroon;"></div>
+                    <div class="color-names">
+                        <span>Maroon</span>
+                        <span>Bordô</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#800000">#800000</button>
+                        <button class="color-btn" data-clipboard-text="rgb(128, 0, 0)">rgb(128, 0, 0)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(0, 100%, 25%)">hsl(0, 100%, 25%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 100%, 100%, 50%)">cmyk(0%, 100%, 100%,
+                            50%)</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Yellow Colors Section -->
+        <section class="section" id="yellow-colors">
+            <h2 class="section-title">Tons de Amarelo</h2>
+
+            <div class="color-card__group">
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Gold;"></div>
+                    <div class="color-names">
+                        <span>Gold</span>
+                        <span>Ouro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFD700">#FFD700</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 215, 0)">rgb(255, 215, 0)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(51, 100%, 50%)">hsl(51, 100%, 50%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 16%, 100%, 0%)">cmyk(0%, 16%, 100%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Yellow;"></div>
+                    <div class="color-names">
+                        <span>Yellow</span>
+                        <span>Coral</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFFF00">#FFFF00</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 255, 0)">rgb(255, 255, 0)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(60, 100%, 50%)">hsl(60, 100%, 50%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 0%, 100%, 0%)">cmyk(0%, 0%, 100%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: LightYellow;"></div>
+                    <div class="color-names">
+                        <span>LightYellow</span>
+                        <span>Amarelo Claro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFFFE0">#FFFFE0</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 255, 224)">rgb(255, 255, 224)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(60, 100%, 94%)">hsl(60, 100%, 94%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 0%, 12%, 0%)">cmyk(0%, 0%, 12%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: LemonChiffon;"></div>
+                    <div class="color-names">
+                        <span>LemonChiffon</span>
+                        <span>LemonChiffon</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFFACD">#FFFACD</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 250, 205)">rgb(255, 250, 205)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(54, 100%, 90%)">hsl(54, 100%, 90%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 2%, 20%, 0%)">cmyk(0%, 2%, 20%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: LightGoldenRodYellow;"></div>
+                    <div class="color-names">
+                        <span>LightGoldenRodYellow</span>
+                        <span>Amarelo Ouro Claro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FAFAD2">#FAFAD2</button>
+                        <button class="color-btn" data-clipboard-text="rgb(250, 250, 210)">rgb(250, 250, 210)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(60, 80%, 90%)">hsl(60, 80%, 90%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 0%, 16%, 2%)">cmyk(0%, 0%, 16%,
+                            2%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: PapayaWhip;"></div>
+                    <div class="color-names">
+                        <span>PapayaWhip</span>
+                        <span>Mamão Batido</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFEFD5">#FFEFD5</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 239, 213)">rgb(255, 239, 213)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(37, 100%, 92%)">hsl(37, 100%, 92%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 6%, 16%, 0%)">cmyk(0%, 6%, 16%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Moccasin;"></div>
+                    <div class="color-names">
+                        <span>Moccasin</span>
+                        <span>Mocassim</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFE4B5">#FFE4B5</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 228, 181)">rgb(255, 228, 181)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(38, 100%, 85%)">hsl(38, 100%, 85%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 11%, 29%, 0%)">cmyk(0%, 11%, 29%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: PeachPuff;"></div>
+                    <div class="color-names">
+                        <span>PeachPuff</span>
+                        <span>Pêssego</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFDAB9">#FFDAB9</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 218, 185)">rgb(255, 218, 185)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(28, 100%, 86%)">hsl(28, 100%, 86%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 15%, 27%, 0%)">cmyk(0%, 15%, 27%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: PaleGoldenRod;"></div>
+                    <div class="color-names">
+                        <span>PaleGoldenRod</span>
+                        <span>Dourado Pálido</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#EEE8AA">#EEE8AA</button>
+                        <button class="color-btn" data-clipboard-text="rgb(238, 232, 170)">rgb(238, 232, 170)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(55, 67%, 80%)">hsl(55, 67%, 80%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 3%, 29%, 7%)">cmyk(0%, 3%, 29%,
+                            7%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Khaki;"></div>
+                    <div class="color-names">
+                        <span>Khaki</span>
+                        <span>Caqui</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#F0E68C">#F0E68C</button>
+                        <button class="color-btn" data-clipboard-text="rgb(240, 230, 140)">rgb(240, 230, 140)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(54, 77%, 75%)">hsl(54, 77%, 75%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 4%, 42%, 6%)">cmyk(0%, 4%, 42%,
+                            6%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: DarkKhaki;"></div>
+                    <div class="color-names">
+                        <span>DarkKhaki</span>
+                        <span>Caqui Escuro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#BDB76B">#BDB76B</button>
+                        <button class="color-btn" data-clipboard-text="rgb(189, 183, 107)">rgb(189, 183, 107)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(56, 38%, 58%)">hsl(56, 38%, 58%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 3%, 43%, 26%)">cmyk(0%, 3%, 43%,
+                            26%)</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- White Colors Section -->
+        <section class="section" id="white-colors">
+            <h2 class="section-title">Tons de Branco/Pastel</h2>
+
+            <div class="color-card__group">
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: White;"></div>
+                    <div class="color-names">
+                        <span>White</span>
+                        <span>Branco</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFFFFF">#FFFFFF</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 255, 255)">rgb(255, 255, 255)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(0, 0%, 100%)">hsl(0, 0%, 100%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 0%, 0%, 0%)">cmyk(0%, 0%, 0%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Snow;"></div>
+                    <div class="color-names">
+                        <span>Snow</span>
+                        <span>Neve</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFFAFA">#FFFAFA</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 250, 250)">rgb(255, 250, 250)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(0, 100%, 99%)">hsl(0, 100%, 99%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 2%, 2%, 0%)">cmyk(0%, 2%, 2%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: HoneyDew;"></div>
+                    <div class="color-names">
+                        <span>HoneyDew</span>
+                        <span>Maná</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#F0FFF0">#F0FFF0</button>
+                        <button class="color-btn" data-clipboard-text="rgb(240, 255, 240)">rgb(240, 255, 240)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(120, 100%, 97%)">hsl(120, 100%, 97%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(6%, 0%, 6%, 0%)">cmyk(6%, 0%, 6%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: MintCream;"></div>
+                    <div class="color-names">
+                        <span>MintCream</span>
+                        <span>Creme de Menta</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#F5FFFA">#F5FFFA</button>
+                        <button class="color-btn" data-clipboard-text="rgb(245, 255, 250)">rgb(245, 255, 250)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(150, 100%, 98%)">hsl(150, 100%, 98%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(4%, 0%, 2%, 0%)">cmyk(4%, 0%, 2%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Azure;"></div>
+                    <div class="color-names">
+                        <span>Azure</span>
+                        <span>Azul Celeste</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#F0FFFF">#F0FFFF</button>
+                        <button class="color-btn" data-clipboard-text="rgb(240, 255, 255)">rgb(240, 255, 255)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(180, 100%, 97%)">hsl(180, 100%, 97%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(6%, 0%, 0%, 0%)">cmyk(6%, 0%, 0%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: AliceBlue;"></div>
+                    <div class="color-names">
+                        <span>AliceBlue</span>
+                        <span>Azul Alice</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#F0F8FF">#F0F8FF</button>
+                        <button class="color-btn" data-clipboard-text="rgb(240, 248, 255)">rgb(240, 248, 255)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(208, 100%, 97%)">hsl(208, 100%, 97%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(6%, 3%, 0%, 0%)">cmyk(6%, 3%, 0%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: GhostWhite;"></div>
+                    <div class="color-names">
+                        <span>GhostWhite</span>
+                        <span>Branco Fantasma</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#F8F8FF">#F8F8FF</button>
+                        <button class="color-btn" data-clipboard-text="rgb(248, 248, 255)">rgb(248, 248, 255)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(240, 100%, 99%)">hsl(240, 100%, 99%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(3%, 3%, 0%, 0%)">cmyk(3%, 3%, 0%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: WhiteSmoke;"></div>
+                    <div class="color-names">
+                        <span>WhiteSmoke</span>
+                        <span>Branco Fumaça</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#F5F5F5">#F5F5F5</button>
+                        <button class="color-btn" data-clipboard-text="rgb(245, 245, 245)">rgb(245, 245, 245)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(0, 0%, 96%)">hsl(0, 0%, 96%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 0%, 0%, 4%)">cmyk(0%, 0%, 0%,
+                            4%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: SeaShell;"></div>
+                    <div class="color-names">
+                        <span>SeaShell</span>
+                        <span>Concha</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFF5EE">#FFF5EE</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 245, 238)">rgb(255, 245, 238)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(25, 100%, 97%)">hsl(25, 100%, 97%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 4%, 7%, 0%)">cmyk(0%, 4%, 7%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Beige;"></div>
+                    <div class="color-names">
+                        <span>Beige</span>
+                        <span>Bege</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#F5F5DC">#F5F5DC</button>
+                        <button class="color-btn" data-clipboard-text="rgb(245, 245, 220)">rgb(245, 245, 220)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(60, 56%, 91%)">hsl(60, 56%, 91%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 0%, 10%, 4%)">cmyk(0%, 0%, 10%,
+                            4%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: OldLace;"></div>
+                    <div class="color-names">
+                        <span>OldLace</span>
+                        <span>Renda Antiga</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FDF5E6">#FDF5E6</button>
+                        <button class="color-btn" data-clipboard-text="rgb(253, 245, 230)">rgb(253, 245, 230)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(39, 85%, 95%)">hsl(39, 85%, 95%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 3%, 9%, 1%)">cmyk(0%, 3%, 9%,
+                            1%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: FloralWhite;"></div>
+                    <div class="color-names">
+                        <span>FloralWhite</span>
+                        <span>Branco Floral</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFFAF0">#FFFAF0</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 250, 240)">rgb(255, 250, 240)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(40, 100%, 97%)">hsl(40, 100%, 97%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 2%, 6%, 0%)">cmyk(0%, 2%, 6%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Ivory;"></div>
+                    <div class="color-names">
+                        <span>Ivory</span>
+                        <span>Marfim</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFFFF0<">#FFFFF0</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 255, 240)">rgb(255, 255, 240)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(60, 100%, 97%)">hsl(60, 100%, 97%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 0%, 6%, 0%)">cmyk(0%, 0%, 6%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: AntiqueWhite;"></div>
+                    <div class="color-names">
+                        <span>AntiqueWhite</span>
+                        <span>Branco Antigo</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FAEBD7">#FAEBD7</button>
+                        <button class="color-btn" data-clipboard-text="rgb(250, 235, 215)">rgb(250, 235, 215)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(34, 78%, 91%)">hsl(34, 78%, 91%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 6%, 14%, 2%)">cmyk(0%, 6%, 14%,
+                            2%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Linen;"></div>
+                    <div class="color-names">
+                        <span>Linen</span>
+                        <span>Linho</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FAF0E6">#FAF0E6</button>
+                        <button class="color-btn" data-clipboard-text="rgb(250, 240, 230)">rgb(250, 240, 230)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(30, 67%, 94%)">hsl(30, 67%, 94%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 4%, 8%, 2%)">cmyk(0%, 4%, 8%,
+                            2%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: LavenderBlush;"></div>
+                    <div class="color-names">
+                        <span>LavenderBlush</span>
+                        <span>Lavanda Avermelhada</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFF0F5">#FFF0F5</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 240, 245)">rgb(255, 240, 245)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(340, 100%, 97%)">hsl(340, 100%, 97%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 6%, 4%, 0%)">cmyk(0%, 6%, 4%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: MistyRose;"></div>
+                    <div class="color-names">
+                        <span>MistyRose</span>
+                        <span>Rosa Embaçado</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFE4E1">#FFE4E1</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 228, 225)">rgb(255, 228, 225)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(6, 100%, 94%)">hsl(6, 100%, 94%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 11%, 12%, 0%)">cmyk(0%, 11%, 12%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: DarkKhaki;"></div>
+                    <div class="color-names">
+                        <span>DarkKhaki</span>
+                        <span>Caqui Escuro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FFE4E1">#FFE4E1</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 228, 225)">rgb(255, 228, 225)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(56, 38%, 58%)">hsl(56, 38%, 58%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 3%, 43%, 26%)">cmyk(0%, 3%, 43%,
+                            26%)</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Purple Color Section -->
+        <section class="section" id="purple-colors">
+            <h2 class="section-title">Tons de Roxo</h2>
+
+            <div class="color-card__group">
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Lavender;"></div>
+                    <div class="color-names">
+                        <span>Lavender</span>
+                        <span>Lavanda</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#E6E6FA">#E6E6FA</button>
+                        <button class="color-btn" data-clipboard-text="rgb(230, 230, 250)">rgb(230, 230, 250)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(240, 67%, 94%)">hsl(240, 67%, 94%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(8%, 8%, 0%, 2%)">cmyk(8%, 8%, 0%,
+                            2%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Thistle;"></div>
+                    <div class="color-names">
+                        <span>Thistle</span>
+                        <span>Cardo</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#D8BFD8">#D8BFD8</button>
+                        <button class="color-btn" data-clipboard-text="rgb(216, 191, 216)">rgb(216, 191, 216)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(300, 24%, 80%)">hsl(300, 24%, 80%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 12%, 0%, 15%)">cmyk(0%, 12%, 0%,
+                            15%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Plum;"></div>
+                    <div class="color-names">
+                        <span>Plum</span>
+                        <span>Ameixa</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#DDA0DD">#DDA0DD</button>
+                        <button class="color-btn" data-clipboard-text="rgb(221, 160, 221)">rgb(221, 160, 221)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(300, 47%, 75%)">hsl(300, 47%, 75%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 28%, 0%, 13%)">cmyk(0%, 28%, 0%,
+                            13%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Violet;"></div>
+                    <div class="color-names">
+                        <span>Violet</span>
+                        <span>Violeta</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#EE82EE">#EE82EE</button>
+                        <button class="color-btn" data-clipboard-text="rgb(238, 130, 238)">rgb(238, 130, 238)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(300, 76%, 72%)">hsl(300, 76%, 72%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 45%, 0%, 7%)">cmyk(0%, 45%, 0%,
+                            7%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Orchid;"></div>
+                    <div class="color-names">
+                        <span>Orchid</span>
+                        <span>Orquídea</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#DA70D6">#DA70D6</button>
+                        <button class="color-btn" data-clipboard-text="rgb(218, 112, 214)">rgb(218, 112, 214)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(302, 59%, 65%)">hsl(302, 59%, 65%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 49%, 2%, 15%)">cmyk(0%, 49%, 2%,
+                            15%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Fuchsia;"></div>
+                    <div class="color-names">
+                        <span>Fuchsia/Magenta</span>
+                        <span>Fúchsia/Magenta</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#FF00FF">#FF00FF</button>
+                        <button class="color-btn" data-clipboard-text="rgb(255, 0, 255)">rgb(255, 0, 255)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(300, 100%, 50%)">hsl(300, 100%, 50%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 100%, 0%, 0%)">cmyk(0%, 100%, 0%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: MediumOrchid;"></div>
+                    <div class="color-names">
+                        <span>MediumOrchid</span>
+                        <span>Orquídea Média</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#BA55D3">#BA55D3</button>
+                        <button class="color-btn" data-clipboard-text="rgb(186, 85, 211)">rgb(186, 85, 211)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(288, 59%, 58%)">hsl(288, 59%, 58%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(12%, 60%, 0%, 17%)">cmyk(12%, 60%, 0%,
+                            17%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: MediumPurple;"></div>
+                    <div class="color-names">
+                        <span>MediumPurple</span>
+                        <span>Púrpura Média</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#9370DB">#9370DB</button>
+                        <button class="color-btn" data-clipboard-text="rgb(147, 112, 219)">rgb(147, 112, 219)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(260, 60%, 65%)">hsl(260, 60%, 65%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(33%, 49%, 0%, 14%)">cmyk(33%, 49%, 0%,
+                            14%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: RebeccaPurple;"></div>
+                    <div class="color-names">
+                        <span>RebeccaPurple</span>
+                        <span>Rebecca Púrpura</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#663399">#663399</button>
+                        <button class="color-btn" data-clipboard-text="rgb(102, 51, 153)">rgb(102, 51, 153)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(270, 50%, 40%)">hsl(270, 50%, 40%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(33%, 67%, 0%, 40%)">cmyk(33%, 67%, 0%,
+                            40%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: BlueViolet;"></div>
+                    <div class="color-names">
+                        <span>BlueViolet</span>
+                        <span>Azul Violeta</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#8A2BE2">#8A2BE2</button>
+                        <button class="color-btn" data-clipboard-text="rgb(138, 43, 226)<">rgb(138, 43, 226)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(271, 76%, 53%)">hsl(271, 76%, 53%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(39%, 81%, 0%, 11%)">cmyk(39%, 81%, 0%,
+                            11%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: DarkViolet;"></div>
+                    <div class="color-names">
+                        <span>DarkViolet</span>
+                        <span>Violeta Escuro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#9400D3">#9400D3</button>
+                        <button class="color-btn" data-clipboard-text="rgb(148, 0, 211)">rgb(148, 0, 211)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(282, 100%, 41%)">hsl(282, 100%, 41%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(30%, 100%, 0%, 17%)">cmyk(30%, 100%, 0%,
+                            17%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: DarkOrchid;"></div>
+                    <div class="color-names">
+                        <span>DarkOrchid</span>
+                        <span>Orquídea Escura</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#9932CC">#9932CC</button>
+                        <button class="color-btn" data-clipboard-text="rgb(153, 50, 204)">rgb(153, 50, 204)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(280, 61%, 50%)">hsl(280, 61%, 50%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(25%, 75%, 0%, 20%)">cmyk(25%, 75%, 0%,
+                            20%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: DarkMagenta;"></div>
+                    <div class="color-names">
+                        <span>DarkMagenta</span>
+                        <span>Magenta Escuro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#8B008B">#8B008B</button>
+                        <button class="color-btn" data-clipboard-text="rgb(139, 0, 139)">rgb(139, 0, 139)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(300, 100%, 27%)">hsl(300, 100%, 27%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 100%, 0%, 45%)">cmyk(0%, 100%, 0%,
+                            45%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Purple;"></div>
+                    <div class="color-names">
+                        <span>Purple</span>
+                        <span>Púrpura</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#800080">#800080</button>
+                        <button class="color-btn" data-clipboard-text="rgb(128, 0, 128)">rgb(128, 0, 128)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(300, 100%, 25%)">hsl(300, 100%, 25%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 100%, 0%, 50%)">cmyk(0%, 100%, 0%,
+                            50%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Indigo;"></div>
+                    <div class="color-names">
+                        <span>Indigo</span>
+                        <span>Índigo</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#4B0082">#4B0082</button>
+                        <button class="color-btn" data-clipboard-text="rgb(75, 0, 130)">rgb(75, 0, 130)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(275, 100%, 25%)">hsl(275, 100%, 25%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(42%, 100%, 0%, 49%)">cmyk(42%, 100%, 0%,
+                            49%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: SlateBlue;"></div>
+                    <div class="color-names">
+                        <span>SlateBlue</span>
+                        <span>Azul Ardósia</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#6A5ACD">#6A5ACD</button>
+                        <button class="color-btn" data-clipboard-text="rgb(106, 90, 205)">rgb(106, 90, 205)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(248, 53%, 58%)">hsl(248, 53%, 58%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(48%, 56%, 0%, 20%)">cmyk(48%, 56%, 0%,
+                            20%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: DarkSlateBlue;"></div>
+                    <div class="color-names">
+                        <span>DarkSlateBlue</span>
+                        <span>Azul Ardósia Escuro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#483D8B">#483D8B</button>
+                        <button class="color-btn" data-clipboard-text="rgb(72, 61, 139)">rgb(72, 61, 139)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(248, 39%, 39%)">hsl(248, 39%, 39%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(48%, 56%, 0%, 45%)">cmyk(48%, 56%, 0%,
+                            45%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: MediumSlateBlue;"></div>
+                    <div class="color-names">
+                        <span>MediumSlateBlue</span>
+                        <span>Azul Ardósia Médio</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#7B68EE">#7B68EE</button>
+                        <button class="color-btn" data-clipboard-text="rgb(123, 104, 238)">rgb(123, 104, 238)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(249, 80%, 67%)">hsl(249, 80%, 67%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(48%, 56%, 0%, 7%)">cmyk(48%, 56%, 0%,
+                            7%)</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Green Colors Section -->
+        <section class="section" id="green-colors">
+            <h2 class="section-title">Tons de Verde</h2>
+
+            <div class="color-card__group">
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: GreenYellow;"></div>
+                    <div class="color-names">
+                        <span>GreenYellow</span>
+                        <span>Amarelo Esverdeado</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#ADFF2F">#ADFF2F</button>
+                        <button class="color-btn" data-clipboard-text="rgb(173, 255, 47)">rgb(173, 255, 47)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(84, 100%, 59%)">hsl(84, 100%, 59%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(32%, 0%, 82%, 0%)">cmyk(32%, 0%, 82%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: ChartReuse;"></div>
+                    <div class="color-names">
+                        <span>ChartReuse</span>
+                        <span>Verde Paris</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#7FFF00">#7FFF00</button>
+                        <button class="color-btn" data-clipboard-text="rgb(127, 255, 0)">rgb(127, 255, 0)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(90, 100%, 50%)">hsl(90, 100%, 50%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(50%, 0%, 100%, 0%)">cmyk(50%, 0%, 100%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: LawnGreen;"></div>
+                    <div class="color-names">
+                        <span>LawnGreen</span>
+                        <span>Verde Grama</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#7CFC00">#7CFC00</button>
+                        <button class="color-btn" data-clipboard-text="rgb(124, 252, 0)">rgb(124, 252, 0)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(90, 100%, 49%)">hsl(90, 100%, 49%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(51%, 0%, 100%, 1%)">cmyk(51%, 0%, 100%,
+                            1%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Lime;"></div>
+                    <div class="color-names">
+                        <span>Lime</span>
+                        <span>Limão/Verde Espectro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#00FF00">#00FF00</button>
+                        <button class="color-btn" data-clipboard-text="rgb(0, 255, 0)">rgb(0, 255, 0)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(120, 100%, 50%)">hsl(120, 100%, 50%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(100%, 0%, 100%, 0%)">cmyk(100%, 0%, 100%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: LimeGreen;"></div>
+                    <div class="color-names">
+                        <span>LimeGreen</span>
+                        <span>Verde Lima</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#32CD32">#32CD32</button>
+                        <button class="color-btn" data-clipboard-text="rgb(50, 205, 50)">rgb(50, 205, 50)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(120, 61%, 50%)">hsl(120, 61%, 50%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(76%, 0%, 76%, 20%)">cmyk(76%, 0%, 76%,
+                            20%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: PaleGreen;"></div>
+                    <div class="color-names">
+                        <span>PaleGreen</span>
+                        <span>Verde Pálido</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#98FB98">#98FB98</button>
+                        <button class="color-btn" data-clipboard-text="rgb(152, 251, 152)">rgb(152, 251, 152)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(120, 93%, 79%)">hsl(120, 93%, 79%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(39%, 0%, 39%, 2%)">cmyk(39%, 0%, 39%,
+                            2%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: LightGreen;"></div>
+                    <div class="color-names">
+                        <span>LightGreen</span>
+                        <span>Limão/Verde Espectro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#90EE90">#90EE90</button>
+                        <button class="color-btn" data-clipboard-text="rgb(144, 238, 144)">rgb(144, 238, 144)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(120, 73%, 75%)">hsl(120, 73%, 75%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(39%, 0%, 39%, 7%)">cmyk(39%, 0%, 39%,
+                            7%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: MediumSpringGreen;"></div>
+                    <div class="color-names">
+                        <span>MediumSpringGreen</span>
+                        <span>Verde Primavera Médio</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#00FA9A">#00FA9A</button>
+                        <button class="color-btn" data-clipboard-text="rgb(0, 250, 154)">rgb(0, 250, 154)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(157, 100%, 49%)">hsl(157, 100%, 49%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(100%, 0%, 38%, 2%)">cmyk(100%, 0%, 38%,
+                            2%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: SpringGreen;"></div>
+                    <div class="color-names">
+                        <span>SpringGreen</span>
+                        <span>Verde Primavera</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#00FF7F">#00FF7F</button>
+                        <button class="color-btn" data-clipboard-text="rgb(0, 255, 127)">rgb(0, 255, 127)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(150, 100%, 50%)">hsl(150, 100%, 50%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(100%, 0%, 50%, 0%)">cmyk(100%, 0%, 50%,
+                            0%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: MediumSeaGreen;"></div>
+                    <div class="color-names">
+                        <span>MediumSeaGreen</span>
+                        <span>Verde Mar Médio</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#3CB371">#3CB371</button>
+                        <button class="color-btn" data-clipboard-text="rgb(60, 179, 113)">rgb(60, 179, 113)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(147, 50%, 47%)">hsl(147, 50%, 47%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(66%, 0%, 37%, 30%)">cmyk(66%, 0%, 37%,
+                            30%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: SeaGreen;"></div>
+                    <div class="color-names">
+                        <span>SeaGreen</span>
+                        <span>Herbal</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#2E8B57">#2E8B57</button>
+                        <button class="color-btn" data-clipboard-text="rgb(46, 139, 87)">rgb(46, 139, 87)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(146, 50%, 36%)">hsl(146, 50%, 36%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(67%, 0%, 37%, 45%)">cmyk(67%, 0%, 37%,
+                            45%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: ForestGreen;"></div>
+                    <div class="color-names">
+                        <span>ForestGreen</span>
+                        <span>Verde Floresta</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#228B22">#228B22</button>
+                        <button class="color-btn" data-clipboard-text="rgb(34, 139, 34)">rgb(34, 139, 34)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(120, 61%, 34%)">hsl(120, 61%, 34%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(76%, 0%, 76%, 45%)">cmyk(76%, 0%, 76%,
+                            45%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Green;"></div>
+                    <div class="color-names">
+                        <span>Green</span>
+                        <span>Verde</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#008000">#008000</button>
+                        <button class="color-btn" data-clipboard-text="rgb(0, 128, 0)">rgb(0, 128, 0)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(120, 100%, 25%)">hsl(120, 100%, 25%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(100%, 0%, 100%, 50%)">cmyk(100%, 0%, 100%,
+                            50%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: DarkGreen;"></div>
+                    <div class="color-names">
+                        <span>DarkGreen</span>
+                        <span>Verde Escuro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#006400">#006400</button>
+                        <button class="color-btn" data-clipboard-text="rgb(0, 100, 0)">rgb(0, 100, 0)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(120, 100%, 20%)">hsl(120, 100%, 20%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(100%, 0%, 100%, 61%)">cmyk(100%, 0%, 100%,
+                            61%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: YellowGreen;"></div>
+                    <div class="color-names">
+                        <span>YellowGreen</span>
+                        <span>Verde Amarelado</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#9ACD32">#9ACD32</button>
+                        <button class="color-btn" data-clipboard-text="rgb(154, 205, 50)">rgb(154, 205, 50)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(80, 61%, 50%)">hsl(80, 61%, 50%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(25%, 0%, 76%, 20%)">cmyk(25%, 0%, 76%,
+                            20%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: OliveDrab;"></div>
+                    <div class="color-names">
+                        <span>OliveDrab</span>
+                        <span>Oliva Parda</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#6B8E23">#6B8E23</button>
+                        <button class="color-btn" data-clipboard-text="rgb(107, 142, 35)">rgb(107, 142, 35)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(80, 60%, 35%)">hsl(80, 60%, 35%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(25%, 0%, 75%, 44%)">cmyk(25%, 0%, 75%,
+                            44%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Olive;"></div>
+                    <div class="color-names">
+                        <span>Olive</span>
+                        <span>Oliva</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#808000">#808000</button>
+                        <button class="color-btn" data-clipboard-text="rgb(128, 128, 0)">rgb(128, 128, 0)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(60, 100%, 25%)<">hsl(60, 100%, 25%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(0%, 0%, 100%, 50%)">cmyk(0%, 0%, 100%,
+                            50%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: DarkOliveGreen;"></div>
+                    <div class="color-names">
+                        <span>DarkOliveGreen</span>
+                        <span>Oliva Escura</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#556B2F">#556B2F</button>
+                        <button class="color-btn" data-clipboard-text="rgb(85,107,47)">rgb(85,107,47)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(82, 39%, 30%)">hsl(82, 39%, 30%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(21%, 0%, 56%, 58%)">cmyk(21%, 0%, 56%,
+                            58%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: MediumAquamarine;"></div>
+                    <div class="color-names">
+                        <span>MediumAquamarine</span>
+                        <span>Água-marinha Média</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#66CDAA">#66CDAA</button>
+                        <button class="color-btn" data-clipboard-text="rgb(102,205,170)">rgb(102,205,170)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(160, 51%, 60%)">hsl(160, 51%, 60%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(50%, 0%, 17%, 20%)">cmyk(50%, 0%, 17%,
+                            20%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: DarkSeaGreen;"></div>
+                    <div class="color-names">
+                        <span>DarkSeaGreen</span>
+                        <span>Verde Mar Escuro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#8FBC8F">#8FBC8F</button>
+                        <button class="color-btn" data-clipboard-text="rgb(143, 188, 143)">rgb(143, 188, 143)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(120, 25%, 65%)">hsl(120, 25%, 65%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(24%, 0%, 24%, 26%)">cmyk(24%, 0%, 24%,
+                            26%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: LightSeaGreen;"></div>
+                    <div class="color-names">
+                        <span>LightSeaGreen</span>
+                        <span>Verde Mar Claro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#20B2AA">#20B2AA</button>
+                        <button class="color-btn" data-clipboard-text="rgb(32, 178, 170)">rgb(32, 178, 170)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(177, 70%, 41%)">hsl(177, 70%, 41%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(82%, 0%, 4%, 30%)">cmyk(82%, 0%, 4%,
+                            30%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: DarkCyan;"></div>
+                    <div class="color-names">
+                        <span>DarkCyan</span>
+                        <span>Ciano Escuro</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#008B8B">#008B8B</button>
+                        <button class="color-btn" data-clipboard-text="rgb(0, 139, 139)">rgb(0, 139, 139)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(180, 100%, 27%)">hsl(180, 100%, 27%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(100%, 0%, 0%, 45%)">cmyk(100%, 0%, 0%,
+                            45%)</button>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-preview" style="background-color: Teal;"></div>
+                    <div class="color-names">
+                        <span>Teal</span>
+                        <span>Verde-azulado</span>
+                    </div>
+                    <div class="color-values">
+                        <button class="color-btn" data-clipboard-text="#008080">#008080</button>
+                        <button class="color-btn" data-clipboard-text="rgb(0, 128, 128)">rgb(0, 128, 128)</button>
+                        <button class="color-btn" data-clipboard-text="hsl(180, 100%, 25%)">hsl(180, 100%, 25%)</button>
+                        <button class="color-btn" data-clipboard-text="cmyk(100%, 0%, 0%, 50%)">cmyk(100%, 0%, 0%,
+                            50%)</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
     <footer class="footer">
-        <small>Feito com <i class="fas fa-heart" style="color: red;"></i> por <a href="https://twitter.com/lucas_patez" target="_blank" rel="noopener">Lucas Patêz</a> sob <a href="https://github.com/lucaspatez/ColorFinder/blob/master/LICENSE" target="_blank" rel="noopener">MIT</a></small>
+        <small>Feito com <i class="fas fa-heart" style="color: red;"></i> por <a href="https://twitter.com/lucas_patez"
+                target="_blank" rel="noopener">Lucas Patêz</a> sob <a
+                href="https://github.com/lucaspatez/ColorFinder/blob/master/LICENSE" target="_blank"
+                rel="noopener">MIT</a></small>
     </footer>
 
     <!-- Scripts -->
@@ -167,7 +2380,8 @@
         }
     </script>
     <script src="vendor/clipboard-js/clipboard.min.js"></script>
-    <script src="lib/main.min.js"></script>
+    <script src="vendor/smooth-scroll/smooth-scroll.min.js"></script>
+    <script src="lib/main.js"></script>
 </body>
 
 </html>

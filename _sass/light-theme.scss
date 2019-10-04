@@ -42,6 +42,12 @@
                 color: $black;
             }
         }
+
+        .color-values {
+            .color-btn {
+                color: $black;
+            }
+        }
     }
 
     // ColorNotification
@@ -54,12 +60,13 @@
     .color-nav-btn {
         background-color: $light;
         color: $primary;
-        border: 1px solid $primary;
+        border: 2px solid $white;
     }
 
     // Color Nav
     .color-nav {
         background-color: $white;
+        border: 2px solid $light;
 
         .title {
             color: $dark;
@@ -97,12 +104,6 @@
                 color: $black;
             }
         }
-    }
-
-    // Back Button
-    .back-btn {
-        color: $black;
-        background-color: $white;
     }
 
 }
