@@ -151,7 +151,7 @@ body {
     align-items: center;
     padding: 10px;
     height: auto;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); }
@@ -202,13 +202,13 @@ body {
   height: auto;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(10px);
-  border-radius: 10px;
+  border-radius: 5px;
   -webkit-backdrop-filter: blur(10px);
   margin: 10px; }
   .color-card .color-preview {
     width: 100%;
     height: 50px;
-    border-radius: 10px 10px 0 0; }
+    border-radius: 5px 5px 0 0; }
   .color-card .color-names {
     display: flex;
     flex-direction: column;
@@ -216,11 +216,11 @@ body {
     .color-card .color-names span:first-child {
       font-size: 16px;
       font-style: normal;
-      font-weight: normal;
+      font-weight: bold;
       line-height: 24px; }
     .color-card .color-names span:last-child {
       font-size: 14px;
-      font-style: normal;
+      font-style: light;
       font-weight: 300;
       line-height: 21px; }
   .color-card .color-values {
@@ -232,29 +232,33 @@ body {
       background-color: transparent;
       font-size: 16px;
       line-height: 24px;
-      border-radius: 10px;
+      border-radius: 5px;
       font-style: normal;
-      font-weight: bold;
+      font-weight: normal;
       cursor: pointer;
       outline: none; }
 
 .color-notification {
   position: fixed;
-  display: none;
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 10px;
-  right: 10px;
+  right: 0;
+  border-left: 10px outset teal;
+  transform: translateX(100%);
+  transition: transform 200ms ease-in;
   padding: 10px;
-  border-radius: 10px;
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 600;
   font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
   z-index: 13;
-  -webkit-animation: pulsate-bck 1s ease-in-out infinite both;
-  animation: pulsate-bck 1s ease-in-out infinite both;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); }
   .color-notification.show-cn {
-    display: block; }
+    transform: translateX(0); }
 
 .color-nav-btn {
   position: fixed;
@@ -281,7 +285,7 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   width: 100%;
-  border-radius: 10px 10px 0 0;
+  border-radius: 5px 5px 0 0;
   z-index: 11;
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
@@ -299,10 +303,6 @@ body {
     font-size: 12px;
     line-height: 18px;
     text-transform: uppercase; }
-  .color-nav .divider {
-    display: block;
-    width: 100%;
-    margin: 10px auto; }
   .color-nav ul {
     list-style-type: none; }
     .color-nav ul li a {
@@ -324,7 +324,7 @@ body {
         margin: 0 10px 0 0; }
       .color-nav ul li a .color-circle {
         display: block;
-        border-radius: 10000px;
+        border-radius: 5000px;
         width: 20px;
         height: 20px;
         margin: 0 10px 0 0; }
@@ -338,7 +338,7 @@ body {
   left: 0;
   bottom: 0;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.25);
   opacity: 0;
   will-change: opacity;
   visibility: hidden;
