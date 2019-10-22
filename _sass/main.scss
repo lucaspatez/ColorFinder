@@ -11,6 +11,7 @@
 // -- Animations
 @import 'animations';
 
+
 // Tiny Reset
 *,
 *:before,
@@ -29,8 +30,8 @@ body {
 // Body
 body {
     display: grid;
-    grid-template-columns: 20px auto 20px;
-    grid-template-rows: 180px auto 50px;
+    grid-template-columns: 25px auto 25px;
+    grid-template-rows: 250px auto 50px;
     grid-template-areas: "header header header"
         ". main ."
         "footer footer footer";
@@ -40,28 +41,23 @@ body {
 // Header
 .header {
     grid-area: header;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 
     .header-container {
-        position: relative;
+        position: absolute;
+        bottom: 0;
         display: flex;
         flex-flow: row nowrap;
+        justify-content: center;
         align-items: center;
         padding: $padding * 2;
         height: auto;
-        border-radius: $border-radius * 2;
-        box-shadow: 0 4px 8px rgba($black, 0.2);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
+        width: 100%;
+        border-radius: $border-radius;
 
         .header-logo {
-            height: 80px;
-            width: 80px;
+            height: 32px;
+            width: 32px;
         }
 
         .header-title {
@@ -71,12 +67,6 @@ body {
             font-style: normal;
             font-weight: 900;
             line-height: 48px;
-        }
-
-        .header-version {
-            position: absolute;
-            bottom: 15px;
-            right: 20px;
         }
     }
 }
@@ -120,7 +110,7 @@ body {
     width: 250px;
     flex-grow: 1;
     height: auto;
-    box-shadow: 0 5px 10px rgba($black, 0.25);
+    box-shadow: 0 2px 6px rgba($black, 0.2);
     backdrop-filter: blur(10px);
     border-radius: $border-radius;
     -webkit-backdrop-filter: blur(10px);
@@ -145,10 +135,10 @@ body {
         }
 
         span:last-child {
-            font-size: 14px;
+            font-size: 16px;
             font-style: light;
             font-weight: 300;
-            line-height: 21px;
+            line-height: 24px;
         }
     }
 
@@ -165,6 +155,7 @@ body {
             border-radius: $border-radius;
             font-style: normal;
             font-weight: normal;
+            letter-spacing: 1px;
             cursor: pointer;
             outline: none;
         }
@@ -182,6 +173,7 @@ body {
     top: 10px;
     right: 0;
     border-left: 10px outset $primary;
+    border-radius: 0 $border-radius 0 $border-radius;
     transform: translateX(100%);
     transition: transform 200ms ease-in;
     padding: $padding * 2;
@@ -201,13 +193,16 @@ body {
     position: fixed;
     width: 40px;
     height: 40px;
-    left: 5px;
-    bottom: 5px;
+    left: 10px;
+    bottom: 10px;
     z-index: 10;
+    border: none;
     font-size: 24px;
     text-align: center;
+    line-height: 10px;
     font-weight: bold;
     border-radius: 50%;
+    box-shadow: 0 2px 6px rgba($black, 0.2);
     cursor: pointer;
 }
 
@@ -222,8 +217,10 @@ body {
     max-height: 350px;
     height: 70%;
     overflow-y: auto; 
+    border: none;
     overflow-x: hidden;
-    width: 100%;
+    width: 98%;
+    box-shadow: 0 -2px 6px rgba($black, 0.2);
     border-radius: $border-radius $border-radius 0 0;
     z-index: 11;
     -webkit-transform: translateY(100%);
