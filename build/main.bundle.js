@@ -1,5 +1,7 @@
+'use strict';
+
 // ModalNotification
-const colorNotification = document.querySelector('#color-notification');
+var colorNotification = document.querySelector('#color-notification');
 
 // Open ModalNotification
 function openColorNotification() {
@@ -36,9 +38,9 @@ clipboard.on('error', function (e) {
 
 // ColorNav
 
-const colorNavBtn = document.querySelector('#color-nav-btn');
-const colorNav = document.querySelector('#color-nav');
-const overlay = document.querySelector('#overlay');
+var colorNavBtn = document.querySelector('#color-nav-btn');
+var colorNav = document.querySelector('#color-nav');
+var overlay = document.querySelector('#overlay');
 
 function toggleNav() {
   if (!colorNav.classList.contains('opened')) {
@@ -56,99 +58,98 @@ function toggleNav() {
 
 colorNavBtn.addEventListener('click', toggleNav, false);
 colorNav.addEventListener('click', toggleNav, false);
-overlay.addEventListener('click', toggleNav, false); 
+overlay.addEventListener('click', toggleNav, false);
 
 // Share API
-const shareBtn = document.querySelector('#share-btn');
-shareBtn.addEventListener('click', event => {
-  if(navigator.share) {
+var shareBtn = document.querySelector('#share-btn');
+shareBtn.addEventListener('click', function (event) {
+  if (navigator.share) {
     navigator.share({
       title: 'ColorFinder',
       url: 'https://colorfinder.netlify.com'
-    }).then(() => {
+    }).then(function () {
       console.log('Obrigado por Compartilhar!');
-    })
-    .catch(console.error);
+    }).catch(console.error);
   } else {
     shareBtn.classList.add('no-share');
   }
 });
 
 // Color Sections Vars
-const grayColors = document.querySelector('#gray-colors');
-const blueColors = document.querySelector('#blue-colors');
-const redColors = document.querySelector('#red-colors');
-const pinkColors = document.querySelector('#pink-colors');
-const orangeColors = document.querySelector('#orange-colors');
-const brownColors = document.querySelector('#brown-colors');
-const yellowColors = document.querySelector('#yellow-colors');
-const whiteColors = document.querySelector('#white-colors');
-const purpleColors = document.querySelector('#purple-colors');
-const greenColors = document.querySelector('#green-colors');
+var grayColors = document.querySelector('#gray-colors');
+var blueColors = document.querySelector('#blue-colors');
+var redColors = document.querySelector('#red-colors');
+var pinkColors = document.querySelector('#pink-colors');
+var orangeColors = document.querySelector('#orange-colors');
+var brownColors = document.querySelector('#brown-colors');
+var yellowColors = document.querySelector('#yellow-colors');
+var whiteColors = document.querySelector('#white-colors');
+var purpleColors = document.querySelector('#purple-colors');
+var greenColors = document.querySelector('#green-colors');
 
 // JumpTo Functions
 function jumtpToGrayColors() {
   grayColors.scrollIntoView({
-    behavior: "smooth",
+    behavior: "smooth"
   });
 };
 
 function jumpToBlueColors() {
   blueColors.scrollIntoView({
-    behavior: "smooth",
+    behavior: "smooth"
   });
 };
 
 function jumpToRedColors() {
   redColors.scrollIntoView({
-    behavior: "smooth",
+    behavior: "smooth"
   });
 };
 
 function jumpToPinkColors() {
   pinkColors.scrollIntoView({
-    behavior: "smooth",
+    behavior: "smooth"
   });
 };
 
 function jumpToOrangeColors() {
   orangeColors.scrollIntoView({
-    behavior: "smooth",
+    behavior: "smooth"
   });
 };
 
 function jumpToBrownColors() {
   brownColors.scrollIntoView({
-    behavior: "smooth",
+    behavior: "smooth"
   });
 };
 
 function jumpToYellowColors() {
   yellowColors.scrollIntoView({
-    behavior: "smooth",
+    behavior: "smooth"
   });
 };
 
 function jumpToWhiteColors() {
   whiteColors.scrollIntoView({
-    behavior: "smooth",
+    behavior: "smooth"
   });
 };
 
 function jumpToPurpleColors() {
   purpleColors.scrollIntoView({
-    behavior: "smooth",
+    behavior: "smooth"
   });
 };
 
 function jumpToGreenColors() {
   greenColors.scrollIntoView({
-    behavior: "smooth",
+    behavior: "smooth"
   });
 };
 
 // Keyboard Shortcuts
-document.onkeyup = function(e) {
+document.onkeyup = function (e) {
   if (e.shiftKey && e.which == 49) {
     jumtpToGrayColors();
   } else if (e.shiftKey && e.which == 50) {
