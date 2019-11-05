@@ -110,7 +110,7 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: 250px auto 60px;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-areas: "header header header" ". main ." "footer footer footer";
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
 
 .header {
@@ -140,14 +140,10 @@ body {
 
 .main {
   grid-area: main;
-  background-color: transparent;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  background-color: transparent; }
 
 .section {
-  padding: 3rem 1.5rem; }
+  margin: 5rem auto; }
 
 .color-card__group {
   display: flex;
@@ -164,8 +160,9 @@ body {
   align-items: center;
   top: 10px;
   right: 0;
-  border-left: 10px outset teal;
-  border-radius: 0 3px 0 3px;
+  border-left: 5px outset teal;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
   transform: translateX(100%);
   transition: transform 200ms ease-in;
   padding: 10px;
@@ -181,12 +178,12 @@ body {
 .color-nav-btn {
   position: fixed;
   height: 50px;
-  left: 5px;
-  bottom: 5px;
+  left: 10px;
+  bottom: 10px;
   z-index: 10;
   border: none;
   padding: 0 20px;
-  border-radius: 3px;
+  border-radius: 25px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   cursor: pointer; }
 
@@ -209,7 +206,7 @@ body {
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
   will-change: transform;
-  transition: transform 0.3s ease-in-out; }
+  transition: transform 200ms ease-in-out; }
   .color-nav.opened {
     transform: none;
     -webkit-transform: none; }
@@ -250,7 +247,6 @@ body {
 
 #overlay {
   position: fixed;
-  display: none;
   width: 100%;
   height: 100%;
   top: 0;
@@ -261,10 +257,9 @@ body {
   opacity: 0;
   will-change: opacity;
   visibility: hidden;
-  transition: opacity 0.3s ease-in-out; }
+  transition: opacity 200ms ease-in-out; }
   #overlay.show-o {
     opacity: 1;
-    display: block;
     visibility: visible; }
 
 .footer {
@@ -286,12 +281,14 @@ body {
 
 /* ColorCard */
 .colorCard {
-  position: relative;
-  width: 300px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
   height: 200px;
   border-radius: 3px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  margin: 10px; }
+  margin: 10px;
+  padding: 10px; }
   .colorCard.is-dark {
     color: black; }
     .colorCard.is-dark .colorCardBtnGroup .colorCardBtn {
@@ -301,25 +298,20 @@ body {
     .colorCard.is-light .colorCardBtnGroup .colorCardBtn {
       color: white; }
   .colorCard .colorCardTitle {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    align-self: flex-start;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 28px; }
+    font-size: 20px;
+    line-height: 24px; }
   .colorCard .colorCardSubTitle {
-    position: absolute;
-    top: 38px;
-    left: 10px;
+    align-self: flex-start;
     font-style: normal;
     font-weight: light;
     font-size: 16px;
     line-height: 20px; }
   .colorCard .colorCardBtnGroup {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+    align-self: flex-end;
+    flex-grow: 1;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end; }

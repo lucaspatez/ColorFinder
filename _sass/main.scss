@@ -31,7 +31,7 @@ body {
     grid-template-columns: auto auto auto;
     grid-template-rows: 250px auto 60px;
     grid-template-areas: "header header header"
-        "main main main"
+        ". main ."
         "footer footer footer";
     font-family: $font-family;
 }
@@ -73,15 +73,11 @@ body {
 .main {
     grid-area: main;
     background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 // Section
 .section {
-    padding: 3rem 1.5rem;
+    margin: 5rem auto;
 }
 
 // ColorCardGroup
@@ -102,8 +98,9 @@ body {
     align-items: center;
     top: 10px;
     right: 0;
-    border-left: 10px outset $primary;
-    border-radius: 0 $border-radius 0 $border-radius;
+    border-left: 5px outset $primary;
+    border-top-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
     transform: translateX(100%);
     transition: transform 200ms ease-in;
     padding: $padding * 2;
@@ -122,12 +119,12 @@ body {
 .color-nav-btn {
     position: fixed;
     height: 50px;
-    left: 5px;
-    bottom: 5px;
+    left: 10px;
+    bottom: 10px;
     z-index: 10;
     border: none;
     padding: 0 $padding * 4;
-    border-radius: $border-radius;
+    border-radius: ($border-radius * 6 + 1px) + $border-radius * 2;
     box-shadow: 0 2px 6px rgba($black, 0.2);
     cursor: pointer;
 }
@@ -152,7 +149,7 @@ body {
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
     will-change: transform;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 200ms ease-in-out;
 
     &.opened {
         transform: none;
@@ -208,7 +205,6 @@ body {
 
 #overlay {
     position: fixed;
-    display: none;
     width: 100%;
     height: 100%;
     top: 0;
@@ -219,11 +215,10 @@ body {
     opacity: 0;
     will-change: opacity;
     visibility: hidden;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 200ms ease-in-out;
 
     &.show-o {
         opacity: 1;
-        display: block;
         visibility: visible;
     }
 }
@@ -250,12 +245,14 @@ body {
 
 /* ColorCard */
 .colorCard {
-    position: relative;
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
     height: 200px;
     border-radius: $border-radius;
     box-shadow: 0 2px 6px rgba($black, 0.2);
     margin: $margin * 2;
+    padding: $padding * 2;
     &.is-dark {
         color: $black;
         .colorCardBtnGroup {
@@ -273,27 +270,22 @@ body {
         }
     }
     .colorCardTitle {
-        position: absolute;
-        top: 10px;
-        left: 10px;
+        align-self: flex-start;
         font-style: normal;
         font-weight: bold;
-        font-size: 24px;
-        line-height: 28px;
+        font-size: 20px;
+        line-height: 24px;
     }
     .colorCardSubTitle {
-        position: absolute;
-        top: 38px;
-        left: 10px;
+        align-self: flex-start;
         font-style: normal;
         font-weight: light;
         font-size: 16px;
         line-height: 20px;
     }
     .colorCardBtnGroup {
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
+        align-self: flex-end;
+        flex-grow: 1;
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-end;
