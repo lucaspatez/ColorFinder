@@ -1,3 +1,12 @@
+// SmoothScroll
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 1000,
+  speedAsDuration: true,
+  easing: "easeInOutQuad",
+  updateURL: true
+});
+
 // ModalNotification
 const colorNotification = document.querySelector('#color-notification');
 
