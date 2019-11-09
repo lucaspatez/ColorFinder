@@ -181,3 +181,15 @@ document.onkeyup = function (e) {
     jumpToGreenColors();
   }
 };
+
+// Dark Theme Fixes
+function changeMetaTheme() {
+  var metaThemeColor = document.querySelector("meta[name=theme-color]");
+  if (!window.matchMedia(" (prefers-color-scheme: dark) ").matches) {
+    metaThemeColor.setAttribute('content', '#ffffff');
+  } else {
+    metaThemeColor.setAttribute('content', '#000000');
+  }
+}
+
+changeMetaTheme();
