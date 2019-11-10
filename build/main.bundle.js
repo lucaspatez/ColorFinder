@@ -183,8 +183,9 @@ document.onkeyup = function (e) {
 };
 
 // Dark Theme Fixes
+var metaThemeColor = document.querySelector("meta[name=theme-color]");
+
 function changeMetaTheme() {
-  var metaThemeColor = document.querySelector("meta[name=theme-color]");
   if (!window.matchMedia(" (prefers-color-scheme: dark) ").matches) {
     metaThemeColor.setAttribute('content', '#ffffff');
   } else {
@@ -192,4 +193,4 @@ function changeMetaTheme() {
   }
 }
 
-changeMetaTheme();
+window.onload = changeMetaTheme();

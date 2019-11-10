@@ -65,19 +65,19 @@ function toggleNav() {
 
 colorNavBtn.addEventListener('click', toggleNav, false);
 colorNav.addEventListener('click', toggleNav, false);
-overlay.addEventListener('click', toggleNav, false); 
+overlay.addEventListener('click', toggleNav, false);
 
 // Share API
 const shareBtn = document.querySelector('#share-btn');
 shareBtn.addEventListener('click', event => {
-  if(navigator.share) {
+  if (navigator.share) {
     navigator.share({
-      title: 'ColorFinder',
-      url: 'https://colorfinder.netlify.com'
-    }).then(() => {
-      console.log('Obrigado por Compartilhar!');
-    })
-    .catch(console.error);
+        title: 'ColorFinder',
+        url: 'https://colorfinder.netlify.com'
+      }).then(() => {
+        console.log('Obrigado por Compartilhar!');
+      })
+      .catch(console.error);
   } else {
     shareBtn.classList.add('no-share');
   }
@@ -157,7 +157,7 @@ function jumpToGreenColors() {
 };
 
 // Keyboard Shortcuts
-document.onkeyup = function(e) {
+document.onkeyup = function (e) {
   if (e.shiftKey && e.which == 49) {
     jumtpToGrayColors();
   } else if (e.shiftKey && e.which == 50) {
@@ -182,13 +182,14 @@ document.onkeyup = function(e) {
 };
 
 // Dark Theme Fixes
+const metaThemeColor = document.querySelector("meta[name=theme-color]");
+
 function changeMetaTheme() {
-  let metaThemeColor = document.querySelector("meta[name=theme-color]");
-  if(!window.matchMedia(" (prefers-color-scheme: dark) ").matches) {
+  if (!window.matchMedia(" (prefers-color-scheme: dark) ").matches) {
     metaThemeColor.setAttribute('content', '#ffffff');
   } else {
     metaThemeColor.setAttribute('content', '#000000');
   }
 }
 
-changeMetaTheme();
+window.onload = changeMetaTheme();
