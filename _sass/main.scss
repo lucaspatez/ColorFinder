@@ -45,7 +45,7 @@ body {
 
     .header-container {
         position: absolute;
-        bottom: 0;
+        top: 0;
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
@@ -56,8 +56,8 @@ body {
         border-radius: $border-radius;
 
         .header-logo {
-            height: 32px;
-            width: 32px;
+            height: 40px;
+            width: 40px;
         }
 
         .header-title {
@@ -66,6 +66,7 @@ body {
             padding: 0 $padding;
             font-style: normal;
             font-weight: 900;
+            letter-spacing: 0.025em;
             line-height: 48px;
         }
     }
@@ -158,13 +159,14 @@ body {
     }
 
     .title {
-        font-weight: normal;
+        font-weight: 600;
         font-style: normal;
         padding: $padding;
         margin: $margin;
         text-align: left;
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 16px;
+        letter-spacing: 0.025em;
+        line-height: 24px;
         text-transform: uppercase;
     }
 
@@ -176,12 +178,12 @@ body {
             flex-flow: row nowrap;
             justify-content: flex-start;
             align-items: center;
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 1px;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: -0.025em;
             font-style: normal;
             padding: $padding * 2;
-            line-height: 21px;
+            line-height: 24px;
             text-decoration: none;
             cursor: pointer;
 
@@ -274,6 +276,7 @@ body {
         align-self: flex-start;
         font-style: normal;
         font-weight: bold;
+        letter-spacing: 0.025em;
         font-size: 20px;
         line-height: 24px;
     }
@@ -281,6 +284,7 @@ body {
         align-self: flex-start;
         font-style: normal;
         font-weight: light;
+        letter-spacing: 0.025em;
         font-size: 16px;
         line-height: 20px;
     }
@@ -300,6 +304,7 @@ body {
             line-height: 22px;
             font-style: normal;
             font-weight: 500;
+            letter-spacing: 0.025em;
             cursor: pointer;
             margin: $margin 0 0 0;
         }
