@@ -190,7 +190,7 @@ body {
   cursor: pointer; }
 
 .color-nav {
-  padding: 10px 0;
+  padding: 10px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -212,15 +212,13 @@ body {
     transform: none;
     -webkit-transform: none; }
   .color-nav .title {
-    font-weight: 600;
+    font-weight: bold;
     font-style: normal;
-    padding: 5px;
-    margin: 5px;
+    padding: 10px;
     text-align: left;
-    font-size: 16px;
+    font-size: 24px;
     letter-spacing: 0.025em;
-    line-height: 24px;
-    text-transform: uppercase; }
+    line-height: 29px; }
   .color-nav ul {
     list-style-type: none; }
     .color-nav ul li a {
@@ -233,13 +231,17 @@ body {
       letter-spacing: -0.025em;
       font-style: normal;
       padding: 10px;
+      margin: 5px 0;
+      border-radius: 3px;
       line-height: 24px;
       text-decoration: none;
       cursor: pointer; }
       .color-nav ul li a#share-btn.no-share {
         display: none; }
       .color-nav ul li a .icon {
-        margin: 0 10px 0 0; }
+        margin: 0 10px 0 0;
+        width: 20px;
+        height: 20px; }
       .color-nav ul li a .color-circle {
         display: block;
         border-radius: 3000px;

@@ -134,7 +134,7 @@ body {
 
 // Color Nav
 .color-nav {
-    padding: $padding * 2 0;
+    padding: $padding * 2;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -159,15 +159,13 @@ body {
     }
 
     .title {
-        font-weight: 600;
+        font-weight: bold;
         font-style: normal;
-        padding: $padding;
-        margin: $margin;
+        padding: $padding * 2;
         text-align: left;
-        font-size: 16px;
+        font-size: 24px;
         letter-spacing: 0.025em;
-        line-height: 24px;
-        text-transform: uppercase;
+        line-height: 29px;
     }
 
     ul {
@@ -183,6 +181,8 @@ body {
             letter-spacing: -0.025em;
             font-style: normal;
             padding: $padding * 2;
+            margin: $margin 0;
+            border-radius: $border-radius;
             line-height: 24px;
             text-decoration: none;
             cursor: pointer;
@@ -193,6 +193,8 @@ body {
 
             .icon {
                 margin: 0 $margin * 2 0 0;
+                width: 20px;
+                height: 20px;
             }
 
             .color-circle {
