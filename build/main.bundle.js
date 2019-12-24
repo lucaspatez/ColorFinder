@@ -185,12 +185,6 @@ document.onkeyup = function (e) {
 // Dark Theme Fixes
 var metaThemeColor = document.querySelector("meta[name=theme-color]");
 
-function changeMetaTheme() {
-  if (!window.matchMedia(" (prefers-color-scheme: dark) ").matches) {
-    metaThemeColor.setAttribute('content', '#ffffff');
-  } else {
-    metaThemeColor.setAttribute('content', '#000000');
-  }
-}
-
-window.onload = changeMetaTheme();
+window.onload = function () {
+  !window.matchMedia(" (prefers-color-scheme: dark) ").matches ? metaThemeColor.setAttribute('content', '#ffffff') : metaThemeColor.setAttribute('content', '#000000');
+};
